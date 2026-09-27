@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maazgul.github.io/Percentage-Calculater/sitemap.xml
+Sitemap: https://maazgul.github.io/Percentage-Calculator/sitemap.xml

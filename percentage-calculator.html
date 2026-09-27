@@ -1,0 +1,298 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Percentage Calculator – Free Online Calculator | MaazCalc</title>
+
+  <meta name="description" content="Use this free percentage calculator to calculate percentages, find X% of a number, and calculate percentage increase or decrease quickly and easily.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Maaz Gul">
+
+  <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/percentage-calculator.html">
+
+  <meta property="og:title" content="Percentage Calculator – Free Online Calculator">
+  <meta property="og:description" content="Calculate percentages, percentage increase, decrease and X% of any number with MaazCalc.">
+  <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/percentage-calculator.html">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #f5f7fb;
+      --text: #222;
+      --card: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 12px 18px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .result {
+      margin-top: 18px;
+      padding: 14px;
+      background: #eef2ff;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Percentage Calculator</h1>
+  <p>Free, simple and easy-to-use percentage calculator by MaazCalc.</p>
+</header>
+
+<main class="container">
+
+  <div class="card">
+    <h2>Calculate X% of a Number</h2>
+
+    <label for="percent">Percentage (%)</label>
+    <input type="number" id="percent" placeholder="e.g. 20">
+
+    <label for="number">Number</label>
+    <input type="number" id="number" placeholder="e.g. 500">
+
+    <button type="button" onclick="calculatePercent()">Calculate</button>
+
+    <div class="result" id="percentResult">Result will appear here.</div>
+  </div>
+
+  <div class="card">
+    <h2>Calculate Percentage Increase or Decrease</h2>
+
+    <label for="oldValue">Original Value</label>
+    <input type="number" id="oldValue" placeholder="e.g. 100">
+
+    <label for="newValue">New Value</label>
+    <input type="number" id="newValue" placeholder="e.g. 120">
+
+    <button type="button" onclick="calculateChange()">Calculate Change</button>
+
+    <div class="result" id="changeResult">Result will appear here.</div>
+  </div>
+
+  <div class="card">
+    <h2>How to Calculate a Percentage</h2>
+
+    <p>
+      To calculate a percentage of a number, use this formula:
+    </p>
+
+    <p>
+      <strong>Percentage = (Percentage ÷ 100) × Number</strong>
+    </p>
+
+    <p>
+      For example, 20% of 500 is 100.
+    </p>
+
+    <h2>Percentage Increase Formula</h2>
+
+    <p>
+      <strong>
+        Percentage Increase = ((New Value − Original Value) ÷ Original Value) × 100
+      </strong>
+    </p>
+
+    <h2>Percentage Decrease Formula</h2>
+
+    <p>
+      <strong>
+        Percentage Decrease = ((Original Value − New Value) ÷ Original Value) × 100
+      </strong>
+    </p>
+
+    <p>
+      MaazCalc provides free online calculators designed to make everyday
+      calculations quick and simple.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I calculate 10% of a number?</h3>
+    <p>
+      Divide 10 by 100 and multiply the result by the number. For example,
+      10% of 200 is 20.
+    </p>
+
+    <h3>How do I calculate percentage increase?</h3>
+    <p>
+      Subtract the original value from the new value, divide by the original
+      value and multiply by 100.
+    </p>
+
+    <h3>How do I calculate percentage decrease?</h3>
+    <p>
+      Subtract the new value from the original value, divide by the original
+      value and multiply by 100.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Other Calculators</h2>
+
+    <p><a href="index.html">All-in-One Calculator</a></p>
+    <p><a href="marks-percentage-calculator.html">Marks Percentage Calculator</a></p>
+    <p><a href="discount-calculator.html">Discount Calculator</a></p>
+    <p><a href="profit-loss-calculator.html">Profit & Loss Calculator</a></p>
+    <p><a href="gpa-cgpa-calculator.html">GPA & CGPA Calculator</a></p>
+  </div>
+
+</main>
+
+<footer>
+  © <span id="year"></span> MaazCalc · Simple tools for everyday calculations
+  <br><br>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About Us</a> |
+  <a href="contact.html">Contact Us</a> |
+  <a href="privacy-policy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms & Conditions</a>
+</footer>
+
+<script>
+  function calculatePercent() {
+    const percent = parseFloat(document.getElementById("percent").value);
+    const number = parseFloat(document.getElementById("number").value);
+    const result = document.getElementById("percentResult");
+
+    if (isNaN(percent) || isNaN(number)) {
+      result.textContent = "Please enter both values.";
+      return;
+    }
+
+    const answer = (percent / 100) * number;
+    result.textContent = percent + "% of " + number + " = " + answer;
+  }
+
+  function calculateChange() {
+    const oldValue = parseFloat(document.getElementById("oldValue").value);
+    const newValue = parseFloat(document.getElementById("newValue").value);
+    const result = document.getElementById("changeResult");
+
+    if (isNaN(oldValue) || isNaN(newValue)) {
+      result.textContent = "Please enter both values.";
+      return;
+    }
+
+    if (oldValue === 0) {
+      result.textContent = "Original value cannot be zero.";
+      return;
+    }
+
+    const change = ((newValue - oldValue) / oldValue) * 100;
+
+    if (change > 0) {
+      result.textContent =
+        "Percentage Increase = " + change.toFixed(2) + "%";
+    } else if (change < 0) {
+      result.textContent =
+        "Percentage Decrease = " + Math.abs(change).toFixed(2) + "%";
+    } else {
+      result.textContent = "There is no percentage change.";
+    }
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```

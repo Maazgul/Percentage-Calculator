@@ -1,689 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RF7FP7578"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4RF7FP7578');
-  </script>
-
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4RF7FP7578'); </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Use our free Discount Calculator to calculate discount amount and final price instantly. Enter the original price and discount percentage to get accurate results.">
-
+  <meta name="description" content="Free Discount Calculator Pakistan – Calculate discount in PKR, final price after discount for Daraz, shopping. Original Price, % Off, Final Price.">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   <meta name="author" content="Maaz Gul">
-
   <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/discount-calculator.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Discount Calculator – Calculate Discount & Final Price | MaazCalc">
-  <meta property="og:description" content="Free online Discount Calculator to calculate discount amount and final price quickly and easily.">
+  <meta property="og:title" content="Discount Calculator Pakistan – Calculate Discount in PKR | MaazCalc">
+  <meta property="og:description" content="Free Discount Calculator in PKR for Pakistan – Calculate discount amount and final price for shopping on Daraz, bazaar & stores.">
   <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/discount-calculator.html">
   <meta property="og:type" content="website">
-
   <meta name="theme-color" content="#4f46e5">
-
-  <title>Discount Calculator – Calculate Discount & Final Price | MaazCalc</title>
-
-  <!-- WebApplication Schema -->
+  <title>Discount Calculator Pakistan – Calculate Discount in PKR | MaazCalc</title>
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "MaazCalc Discount Calculator",
-    "url": "https://maazgul.github.io/Percentage-Calculator/discount-calculator.html",
-    "description": "Free online Discount Calculator to calculate discount amount and final price.",
-    "applicationCategory": "CalculatorApplication",
-    "operatingSystem": "Any",
-    "browserRequirements": "Requires JavaScript",
-    "author": {
-      "@type": "Person",
-      "name": "Maaz Gul"
-    }
+    "@context": "https://schema.org", "@type": "WebApplication", "name": "MaazCalc Discount Calculator Pakistan", "url": "https://maazgul.github.io/Percentage-Calculator/discount-calculator.html", "description": "Free online Discount Calculator in PKR to calculate discount amount and final price for Pakistani shopping.", "applicationCategory": "ShoppingApplication", "operatingSystem": "Any", "author": { "@type": "Person", "name": "Maaz Gul" }, "offers": { "@type":"Offer", "price":"0", "priceCurrency":"PKR" }
   }
   </script>
-
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+    "@context": "https://schema.org", "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a discount calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A discount calculator calculates the discount amount and the final price after applying a percentage discount to the original price."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I calculate a discount?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Discount amount = Original Price × Discount Percentage ÷ 100. Final Price = Original Price − Discount Amount."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much is 20% off 5000?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A 20% discount on 5,000 is 1,000, so the final price is 4,000."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I calculate the final price after a discount?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Enter the original price and discount percentage to calculate both the discount amount and the final price."
-        }
-      }
+      { "@type": "Question", "name": "What is a discount calculator and how does it work in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "A discount calculator in Pakistan calculates discount amount and final price in PKR after applying percentage discount. You enter original price (e.g., 5000 PKR) and discount % (e.g., 20%), it shows discount amount (1000 PKR) and final price (4000 PKR). Useful for Daraz, bazaar shopping." } },
+      { "@type": "Question", "name": "How do I calculate a discount in PKR?", "acceptedAnswer": { "@type": "Answer", "text": "Formula: Discount Amount = Original Price × Discount Percentage ÷ 100. Final Price = Original Price − Discount Amount. For example, original price 5000 PKR, 20% off: Discount = 5000*20/100=1000 PKR, Final Price = 5000-1000=4000 PKR." } },
+      { "@type": "Question", "name": "How much is 20% off 5000 PKR?", "acceptedAnswer": { "@type": "Answer", "text": "A 20% discount on 5000 PKR is 1000 PKR discount, so final price is 4000 PKR. Our calculator instantly shows this for any price in Pakistani Rupees." } },
+      { "@type": "Question", "name": "How to calculate 30% off in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "To calculate 30% off, multiply price by 0.30 to get discount amount. For example, 3000 PKR product with 30% off: Discount = 3000*0.30=900 PKR, Final Price = 2100 PKR. Common in Daraz 11.11 sale." } },
+      { "@type": "Question", "name": "How to calculate original price after discount?", "acceptedAnswer": { "@type": "Answer", "text": "If you know final price and discount %, original price = Final Price / (1 - Discount%/100). For example, if you paid 4000 PKR after 20% discount, original price = 4000 / 0.80 = 5000 PKR." } },
+      { "@type": "Question", "name": "What is the formula for discount percentage?", "acceptedAnswer": { "@type": "Answer", "text": "Discount Percentage = (Discount Amount / Original Price) * 100. If original price 2000 PKR and discount is 400 PKR, discount % = (400/2000)*100 = 20%." } },
+      { "@type": "Question", "name": "How to calculate double discount like 20% + 10%?", "acceptedAnswer": { "@type": "Answer", "text": "Double discount is not 30% directly. First apply 20% on original price, then apply 10% on discounted price. For example, 5000 PKR: After 20% = 4000 PKR, after extra 10% on 4000 = 3600 PKR final price. Total effective discount = 28%." } },
+      { "@type": "Question", "name": "Can I use this for Daraz, Amazon, and bazaar shopping?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, perfect for Daraz 11.11, Black Friday, Eid sales in Pakistan. Enter original price from Daraz and discount % shown, get final price in PKR including savings." } },
+      { "@type": "Question", "name": "How much is 50% off?", "acceptedAnswer": { "@type": "Answer", "text": "50% off means half price. Discount amount = Original Price / 2. For example, 50% off on 6000 PKR is 3000 PKR discount, final price = 3000 PKR." } },
+      { "@type": "Question", "name": "Is MaazCalc discount calculator free and accurate for PKR?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, MaazCalc Discount Calculator is 100% free, accurate for PKR, and works in browser. Created by Maaz Gul from Pakistan for local shoppers. We do not store your shopping data." } }
     ]
   }
   </script>
-
   <style>
-    :root{
-      --primary:#4f46e5;
-      --primary2:#7c3aed;
-      --bg:#f5f7fb;
-      --card:#fff;
-      --text:#172033;
-      --muted:#64748b;
-      --border:#e2e8f0;
-      --shadow:0 14px 40px rgba(15,23,42,.08);
-    }
-
-    *{
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      margin:0;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-    }
-
-    button,input{
-      font:inherit;
-    }
-
-    .header{
-      background:linear-gradient(135deg,#4338ca,#7c3aed);
-      color:#fff;
-      padding:24px 18px 70px;
-    }
-
-    .nav{
-      max-width:900px;
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:800;
-      font-size:21px;
-    }
-
-    .logo{
-      width:44px;
-      height:44px;
-      border-radius:13px;
-      background:rgba(255,255,255,.16);
-      display:grid;
-      place-items:center;
-      font-size:24px;
-      box-shadow:inset 0 1px rgba(255,255,255,.25);
-    }
-
-    .hero{
-      max-width:900px;
-      margin:52px auto 0;
-      text-align:center;
-    }
-
-    .hero h1{
-      font-size:clamp(30px,5vw,50px);
-      margin:0 0 12px;
-      letter-spacing:-1.5px;
-    }
-
-    .hero p{
-      margin:0 auto;
-      max-width:680px;
-      color:#e9e7ff;
-      font-size:17px;
-      line-height:1.6;
-    }
-
-    .container{
-      max-width:900px;
-      margin:-38px auto 50px;
-      padding:0 16px;
-    }
-
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:28px;
-      box-shadow:var(--shadow);
-    }
-
-    .calculator h2{
-      margin:0 0 8px;
-      font-size:24px;
-    }
-
-    .desc{
-      margin:0 0 24px;
-      color:var(--muted);
-      line-height:1.6;
-    }
-
-    .field{
-      margin:16px 0;
-    }
-
-    label{
-      display:block;
-      font-weight:700;
-      font-size:14px;
-      margin-bottom:7px;
-    }
-
-    input{
-      width:100%;
-      border:1px solid var(--border);
-      background:#fff;
-      border-radius:11px;
-      padding:13px;
-      outline:none;
-      color:var(--text);
-    }
-
-    input:focus{
-      border-color:#818cf8;
-      box-shadow:0 0 0 3px rgba(99,102,241,.12);
-    }
-
-    .actions{
-      display:flex;
-      gap:10px;
-      margin-top:20px;
-    }
-
-    .btn{
-      border:0;
-      border-radius:11px;
-      padding:13px 16px;
-      cursor:pointer;
-      font-weight:800;
-    }
-
-    .primary{
-      background:var(--primary);
-      color:#fff;
-      flex:1;
-    }
-
-    .primary:hover{
-      background:#4338ca;
-    }
-
-    .secondary{
-      background:#eef2f7;
-      color:#334155;
-    }
-
-    .result{
-      margin-top:20px;
-      padding:18px;
-      border-radius:14px;
-      background:#f8fafc;
-      border:1px solid var(--border);
-      display:none;
-    }
-
-    .result.show{
-      display:block;
-    }
-
-    .result strong{
-      font-size:25px;
-      display:block;
-      margin-bottom:6px;
-    }
-
-    .result small{
-      color:var(--muted);
-      line-height:1.6;
-    }
-
-    .seo-content{
-      max-width:900px;
-      margin:0 auto 30px;
-      padding:0 16px;
-    }
-
-    .seo-content .card{
-      line-height:1.7;
-    }
-
-    .seo-content h2{
-      margin-top:28px;
-    }
-
-    .seo-content h2:first-child{
-      margin-top:0;
-    }
-
-    .faq-section{
-      max-width:900px;
-      margin:0 auto 30px;
-      padding:0 16px;
-    }
-
-    .faq-item{
-      padding:16px 0;
-      border-bottom:1px solid var(--border);
-    }
-
-    .faq-item:last-child{
-      border-bottom:0;
-    }
-
-    .faq-item h3{
-      margin:0 0 8px;
-      font-size:17px;
-    }
-
-    .faq-item p{
-      margin:0;
-      color:var(--muted);
-      line-height:1.7;
-    }
-
-    .footer{
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-      padding:10px 16px 30px;
-    }
-
-    .footer a{
-      color:inherit;
-      text-decoration:none;
-    }
-
-    .footer a:hover{
-      text-decoration:underline;
-    }
-
-    @media(max-width:600px){
-      .card{
-        padding:20px;
-      }
-
-      .hero{
-        margin-top:40px;
-      }
-
-      .hero p{
-        font-size:15px;
-      }
-
-      .actions{
-        flex-direction:column;
-      }
-    }
+    :root{ --primary:#4f46e5; --primary2:#7c3aed; --bg:#f5f7fb; --card:#fff; --text:#172033; --muted:#64748b; --border:#e2e8f0; --shadow:0 14px 40px rgba(15,23,42,.08); }
+    *{ box-sizing:border-box; } html{ scroll-behavior:smooth; } body{ margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+    button,input{ font:inherit; } .header{ background:linear-gradient(135deg,#4338ca,#7c3aed); color:#fff; padding:24px 18px 70px; }
+    .nav{ max-width:900px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:12px; font-weight:800; font-size:21px; } .logo{ width:44px; height:44px; border-radius:13px; background:rgba(255,255,255,.16); display:grid; place-items:center; font-size:24px; box-shadow:inset 0 1px rgba(255,255,255,.25); }
+    .hero{ max-width:900px; margin:52px auto 0; text-align:center; } .hero h1{ font-size:clamp(30px,5vw,50px); margin:0 0 12px; letter-spacing:-1.5px; } .hero p{ margin:0 auto; max-width:680px; color:#e9e7ff; font-size:17px; line-height:1.6; }
+    .container{ max-width:900px; margin:-38px auto 50px; padding:0 16px; } .card{ background:var(--card); border:1px solid var(--border); border-radius:20px; padding:28px; box-shadow:var(--shadow); margin-bottom:22px; }
+    .calculator h2{ margin:0 0 8px; font-size:24px; } .desc{ margin:0 0 24px; color:var(--muted); line-height:1.6; } .field{ margin:16px 0; } label{ display:block; font-weight:700; font-size:14px; margin-bottom:7px; }
+    input{ width:100%; border:1px solid var(--border); background:#fff; border-radius:11px; padding:13px; outline:none; color:var(--text); }
+    input:focus{ border-color:#818cf8; box-shadow:0 0 0 3px rgba(99,102,241,.12); }
+    .actions{ display:flex; gap:10px; margin-top:20px; } .btn{ border:0; border-radius:11px; padding:13px 16px; cursor:pointer; font-weight:800; } .primary{ background:var(--primary); color:#fff; flex:1; } .primary:hover{ background:#4338ca; } .secondary{ background:#eef2f7; color:#334155; }
+    .result{ margin-top:20px; padding:18px; border-radius:14px; background:#eef2ff; border:1px solid #c7d2fe; border-left:4px solid var(--primary); display:none; } .result.show{ display:block; } .result strong{ font-size:26px; display:block; margin-bottom:6px; } .result small{ color:var(--muted); line-height:1.6; display:block; margin-top:6px; }
+    .formula{ background:#f8fafc; padding:12px; border-radius:8px; border:1px dashed #94a3b8; font-weight:bold; margin:12px 0; }
+    .seo-content, .faq-section{ max-width:900px; margin:0 auto 30px; padding:0 16px; } .seo-content .card{ line-height:1.8; } .faq-item{ padding:16px 0; border-bottom:1px solid var(--border); } .faq-item:last-child{ border-bottom:0; } .faq-item h3{ margin:0 0 8px; font-size:17px; color:var(--text); } .faq-item p{ margin:0; color:var(--muted); line-height:1.7; }
+    .footer{ text-align:center; color:var(--muted); font-size:13px; padding:10px 16px 30px; } .footer a{ color:var(--primary); text-decoration:none; }
+    @media(max-width:600px){ .card{ padding:20px; } .hero{ margin-top:40px; } .hero p{ font-size:15px; } .actions{ flex-direction:column; } }
   </style>
-
 </head>
-
 <body>
-
 <header class="header">
-
-  <nav class="nav">
-    <div class="brand">
-      <div class="logo">∑</div>
-      <span>MaazCalc</span>
-    </div>
-
-    <div style="font-size:13px;opacity:.9">
-      Discount Calculator
-    </div>
-  </nav>
-
-  <div class="hero">
-    <h1>Discount Calculator</h1>
-
-    <p>
-      Calculate discount amount and final price quickly with our free,
-      simple and mobile-friendly Discount Calculator.
-    </p>
-  </div>
-
+  <nav class="nav"><div class="brand"><div class="logo">%</div><span>MaazCalc</span></div><div style="font-size:13px;opacity:.9">Discount Calculator Pakistan</div></nav>
+  <div class="hero"><h1>Discount Calculator Pakistan</h1><p>Calculate discount amount and final price in PKR quickly – Best for Daraz, Eid Sale, Bazaar Shopping & Students.</p></div>
 </header>
-
-
 <main class="container">
-
   <section class="calculator">
-
     <div class="card">
-
-      <h2>Calculate Discount</h2>
-
-      <p class="desc">
-        Enter the original price and discount percentage to calculate
-        the discount amount and final price.
-      </p>
-
-      <div class="field">
-        <label for="originalPrice">Original Price</label>
-        <input
-          id="originalPrice"
-          type="number"
-          step="any"
-          min="0"
-          placeholder="e.g. 5000"
-        >
-      </div>
-
-      <div class="field">
-        <label for="discountPct">Discount Percentage (%)</label>
-        <input
-          id="discountPct"
-          type="number"
-          step="any"
-          min="0"
-          placeholder="e.g. 20"
-        >
-      </div>
-
-      <div class="actions">
-
-        <button
-          class="btn primary"
-          onclick="calcDiscount()"
-        >
-          Calculate Discount
-        </button>
-
-        <button
-          class="btn secondary"
-          onclick="clearCalculator()"
-        >
-          Clear
-        </button>
-
-      </div>
-
+      <h2>Calculate Discount in PKR</h2>
+      <p class="desc">Enter original price in Pakistani Rupees and discount percentage to calculate savings and final price instantly.</p>
+      <div class="field"><label for="originalPrice">Original Price (PKR) – Asal Keemat</label><input id="originalPrice" type="number" step="any" min="0" placeholder="e.g. 5000"></div>
+      <div class="field"><label for="discountPct">Discount Percentage (%) – Choot %</label><input id="discountPct" type="number" step="any" min="0" placeholder="e.g. 20"></div>
+      <div class="actions"><button class="btn primary" onclick="calcDiscount()">Calculate Discount</button><button class="btn secondary" onclick="clearCalculator()">Clear</button></div>
       <div id="discountResult" class="result"></div>
-
     </div>
-
   </section>
-
 </main>
-
-
 <section class="seo-content">
-
   <div class="card">
-
-    <h2>Free Online Discount Calculator</h2>
-
-    <p>
-      MaazCalc provides a free online Discount Calculator that helps you
-      calculate the discount amount and final price instantly. Enter the
-      original price and discount percentage to get a quick and accurate
-      result. The calculator works directly in your web browser on mobile
-      phones, tablets, laptops and desktop computers.
-    </p>
-
-
-    <h2>How to Calculate Discount?</h2>
-
-    <p>
-      The basic discount formula is:
-      <strong>
-        Discount Amount = Original Price × Discount Percentage ÷ 100
-      </strong>.
-    </p>
-
-    <p>
-      After finding the discount amount, use:
-      <strong>
-        Final Price = Original Price − Discount Amount
-      </strong>.
-    </p>
-
-
-    <h2>Example of a Discount Calculation</h2>
-
-    <p>
-      Suppose an item costs 5,000 and has a 20% discount.
-      The discount amount is 1,000 and the final price is 4,000.
-    </p>
-
-
-    <h2>How to Use the Discount Calculator</h2>
-
-    <p>
-      Enter the original price of the product in the first field.
-      Then enter the discount percentage in the second field.
-      Click the <strong>Calculate Discount</strong> button to see the
-      discount amount and final price.
-    </p>
-
-
-    <h2>Discount Calculator for Shopping</h2>
-
-    <p>
-      A discount calculator can be useful when shopping online or in stores.
-      It helps you quickly determine how much money you save and how much
-      you need to pay after a percentage discount.
-    </p>
-
-
-    <h2>Why Use MaazCalc?</h2>
-
-    <p>
-      MaazCalc provides simple online calculators for everyday calculations.
-      No installation is required, and calculations can be performed directly
-      in your browser.
-    </p>
-
-
-    <p>
-      You can also use our
-      <a href="marks-percentage-calculator.html">
-        Marks Percentage Calculator
-      </a>
-      to calculate exam marks percentage.
-    </p>
-<p>
-  You can also use our
-  <a href="index.html">
-    Free All-in-One Calculator
-  </a>
-  for percentage, marks, discount, profit and loss, GPA and CGPA calculations.
-</p>
+    <h2>Free Online Discount Calculator in PKR for Pakistan</h2>
+    <p>MaazCalc provides a free online Discount Calculator specially designed for Pakistani shoppers. Whether you are shopping on <strong>Daraz.pk, PriceOye, Homeshopping, or local bazaars in Lahore, Karachi, Islamabad</strong>, our calculator helps you calculate discount amount and final price instantly in Pakistani Rupees (PKR). Enter original price and discount percentage to get quick and accurate result. The calculator works directly in your web browser on mobile phones, tablets, laptops and desktops without any app installation.</p>
+    <h2>How to Calculate Discount in PKR? – Formulas</h2>
+    <p class="formula">Discount Amount (Bachat) = Original Price × Discount % ÷ 100</p>
+    <p class="formula">Final Price (Aakhri Keemat) = Original Price − Discount Amount</p>
+    <p class="formula">Discount % = (Discount Amount ÷ Original Price) × 100</p>
+    <p>These formulas work for any shopping in Pakistan. For example, if a product's original price is 5000 PKR and shopkeeper says 20% off for Eid Sale, discount amount is 1000 PKR and you pay 4000 PKR.</p>
+    <h2>Example of Discount Calculation for Pakistani Shopping</h2>
+    <p><strong>Example 1 – Daraz 11.11 Sale:</strong> A mobile phone costs 30,000 PKR on Daraz with 15% discount. Discount = 30,000 × 15 ÷ 100 = 4,500 PKR. Final Price = 30,000 − 4,500 = 25,500 PKR. You save 4,500 PKR.</p>
+    <p><strong>Example 2 – Bazaar Bargaining:</strong> A shirt original price in Tariq Road Karachi is 3000 PKR, shopkeeper gives 25% discount. Discount = 3000 × 0.25 = 750 PKR. Final = 2250 PKR.</p>
+    <p><strong>Example 3 – Double Discount (20% + 10%):</strong> Many stores offer 20% + extra 10% off. This is NOT 30%. First discount: 5000 PKR → 4000 PKR after 20% off. Second 10% on 4000 = 400 PKR. Final = 3600 PKR. Total saving = 1400 PKR (28% effective).</p>
+    <h2>How to Use the Discount Calculator – Step by Step for Pakistan</h2>
+    <ol>
+      <li>Enter the <strong>Original Price</strong> of the product in PKR (e.g., 5000) in first field.</li>
+      <li>Enter the <strong>Discount Percentage</strong> shown on Daraz or shop (e.g., 20) in second field.</li>
+      <li>Click <strong>Calculate Discount</strong> button.</li>
+      <li>Our calculator will instantly show <strong>Discount Amount in PKR</strong> (how much you save) and <strong>Final Price in PKR</strong> (how much you pay).</li>
+      <li>Use Clear button to calculate another product.</li>
+    </ol>
+    <h2>Discount Calculator for Shopping – Why Important in Pakistan?</h2>
+    <p>In Pakistan, every Eid, Black Friday, Daraz 11.11, and end-of-season sale offers heavy discounts from 10% to 70% off. Without calculation, many shopkeepers show fake discounts. Our discount calculator helps you verify real savings. It is useful for students, housewives shopping online, and small business owners calculating profit margins after discount.</p>
+    <h2>Why Use MaazCalc Discount Calculator?</h2>
+    <p>MaazCalc provides simple, fast, and accurate online calculators for everyday calculations in Pakistan. No installation required, works offline after loading, 100% free, no data stored. We also provide <a href="percentage-calculator.html">Percentage Calculator</a>, <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a> for BISE students, <a href="profit-loss-calculator.html">Profit & Loss Calculator</a> for shopkeepers, and <a href="gpa-cgpa-calculator.html">GPA Calculator</a> for university students.</p>
   </div>
-
 </section>
-
-
 <section class="faq-section">
-
   <div class="card">
-
-    <h2>Frequently Asked Questions</h2>
-
-
-    <div class="faq-item">
-
-      <h3>What is a discount calculator?</h3>
-
-      <p>
-        A discount calculator calculates the discount amount and the final
-        price after applying a percentage discount to the original price.
-      </p>
-
-    </div>
-
-
-    <div class="faq-item">
-
-      <h3>How do I calculate a discount?</h3>
-
-      <p>
-        Discount amount = Original Price × Discount Percentage ÷ 100.
-        Final Price = Original Price − Discount Amount.
-      </p>
-
-    </div>
-
-
-    <div class="faq-item">
-
-      <h3>How much is 20% off 5000?</h3>
-
-      <p>
-        A 20% discount on 5,000 is 1,000, so the final price is 4,000.
-      </p>
-
-    </div>
-
-
-    <div class="faq-item">
-
-      <h3>Can I calculate the final price after a discount?</h3>
-
-      <p>
-        Yes. Enter the original price and discount percentage to calculate
-        both the discount amount and the final price.
-      </p>
-
-    </div>
-
+    <h2>Frequently Asked Questions – Discount Calculator Pakistan</h2>
+    <div class="faq-item"><h3>What is a discount calculator and how does it work in Pakistan?</h3><p>A discount calculator in Pakistan calculates discount amount and final price in PKR after applying percentage discount. You enter original price (e.g., 5000 PKR) and discount % (e.g., 20%), it shows discount amount (1000 PKR) and final price (4000 PKR). Useful for Daraz, bazaar shopping, and Eid sales.</p></div>
+    <div class="faq-item"><h3>How do I calculate a discount in PKR?</h3><p>Formula: Discount Amount = Original Price × Discount Percentage ÷ 100. Final Price = Original Price − Discount Amount. For example, original price 5000 PKR, 20% off: Discount = 5000*20/100=1000 PKR, Final = 5000-1000=4000 PKR.</p></div>
+    <div class="faq-item"><h3>How much is 20% off 5000 PKR?</h3><p>A 20% discount on 5000 PKR is 1000 PKR discount, so final price is 4000 PKR. Our calculator instantly shows this for any price in Pakistani Rupees.</p></div>
+    <div class="faq-item"><h3>How to calculate 30% off in Pakistan?</h3><p>To calculate 30% off, multiply price by 0.30 to get discount amount. For example, 3000 PKR product with 30% off: Discount = 3000*0.30=900 PKR, Final Price = 2100 PKR. Common in Daraz 11.11 sale and Eid sales.</p></div>
+    <div class="faq-item"><h3>How to calculate original price after discount?</h3><p>If you know final price and discount %, original price = Final Price / (1 - Discount%/100). For example, if you paid 4000 PKR after 20% discount, original price = 4000 / 0.80 = 5000 PKR. Useful to check fake discounts.</p></div>
+    <div class="faq-item"><h3>What is the formula for discount percentage?</h3><p>Discount Percentage = (Discount Amount / Original Price) * 100. If original price 2000 PKR and discount is 400 PKR, discount % = (400/2000)*100 = 20%.</p></div>
+    <div class="faq-item"><h3>How to calculate double discount like 20% + 10%?</h3><p>Double discount is not 30% directly. First apply 20% on original price, then apply 10% on discounted price. For example, 5000 PKR: After 20% = 4000 PKR, after extra 10% on 4000 = 3600 PKR final price. Total effective discount = 28%, not 30%.</p></div>
+    <div class="faq-item"><h3>Can I use this for Daraz, Amazon, and bazaar shopping?</h3><p>Yes, perfect for Daraz 11.11, Black Friday, Eid sales, and local bazaars in Lahore, Karachi, Islamabad, Peshawar. Enter original price from Daraz and discount % shown, get final price in PKR including savings.</p></div>
+    <div class="faq-item"><h3>How much is 50% off?</h3><p>50% off means half price. Discount amount = Original Price / 2. For example, 50% off on 6000 PKR is 3000 PKR discount, final price = 3000 PKR. This is common in end-of-season sales.</p></div>
+    <div class="faq-item"><h3>Is MaazCalc discount calculator free and accurate for PKR?</h3><p>Yes, MaazCalc Discount Calculator is 100% free, accurate for PKR, and works securely in your browser. Created by Maaz Gul from Pakistan for local shoppers. We do not store your shopping data, as per our <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
   </div>
-
 </section>
-
-
 <footer class="footer">
-
-  © <span id="year"></span> MaazCalc · Simple tools for everyday calculations
-
-  <br><br>
-
-  <a href="index.html">Home</a> |
-  <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a> |
-  <a href="about.html">About Us</a> |
-  <a href="contact.html">Contact Us</a> |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms.html">Terms & Conditions</a>
-
+  © <span id="year"></span> MaazCalc · Simple tools for everyday calculations in Pakistan<br><br>
+  <a href="index.html">Home</a> | <a href="marks-percentage-calculator.html">Marks Calculator</a> | <a href="percentage-calculator.html">Percentage Calculator</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a>
 </footer>
-
-
 <script>
-
   function calcDiscount(){
-
-    const price = parseFloat(
-      document.getElementById('originalPrice').value
-    );
-
-    const discount = parseFloat(
-      document.getElementById('discountPct').value
-    );
-
+    const price = parseFloat(document.getElementById('originalPrice').value);
+    const discount = parseFloat(document.getElementById('discountPct').value);
     const result = document.getElementById('discountResult');
-
-    if(
-      !Number.isFinite(price) ||
-      !Number.isFinite(discount) ||
-      price < 0 ||
-      discount < 0 ||
-      discount > 100
-    ){
-
-      result.innerHTML =
-        'Please enter a valid price and a discount between 0% and 100%.';
-
+    if(!Number.isFinite(price) || !Number.isFinite(discount) || price < 0 || discount < 0 || discount > 100){
+      result.innerHTML = 'Please enter valid price and discount between 0% and 100%. Discount cannot be more than 100%.';
       result.classList.add('show');
-
       return;
     }
-
     const discountAmount = price * discount / 100;
-
     const finalPrice = price - discountAmount;
-
     result.innerHTML = `
-      <strong>Final Price: ${formatNumber(finalPrice)}</strong>
+      <strong>Final Price: ${formatNumber(finalPrice)} PKR</strong>
       <small>
-        Discount Amount: ${formatNumber(discountAmount)}
-        (${formatNumber(discount)}% off the original price)
+        You Save: <b>${formatNumber(discountAmount)} PKR</b> (${formatNumber(discount)}% OFF)<br>
+        Original: ${formatNumber(price)} PKR → Final: ${formatNumber(finalPrice)} PKR<br>
+        <span style='color:#059669'>✓ Perfect for Daraz & Bazaar Shopping</span>
       </small>
     `;
-
     result.classList.add('show');
-
   }
-
-
-  function formatNumber(value){
-
-    return Number(value).toLocaleString(undefined,{
-      maximumFractionDigits:2
-    });
-
-  }
-
-
-  function clearCalculator(){
-
-    document.getElementById('originalPrice').value = '';
-
-    document.getElementById('discountPct').value = '';
-
-    document.getElementById('discountResult').classList.remove('show');
-
-  }
-
-
-  document.getElementById('year').textContent =
-    new Date().getFullYear();
-
+  function formatNumber(value){ return Number(value).toLocaleString(undefined,{ maximumFractionDigits:2 }); }
+  function clearCalculator(){ document.getElementById('originalPrice').value = ''; document.getElementById('discountPct').value = ''; document.getElementById('discountResult').classList.remove('show'); }
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>

@@ -3,223 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Marks Percentage Calculator – Calculate Exam Marks % | MaazCalc</title>
-  <meta name="description" content="Use our free Marks Percentage Calculator to calculate exam marks percentage instantly. Enter obtained marks and total marks to find your percentage quickly and easily.">
+<title>Marks Percentage Calculator – Matric, Inter, O-Level Pakistan | MaazCalc</title>
+  <meta name="description" content="Free Marks Percentage Calculator for Pakistan – Calculate Matric, Inter, O-Level, A-Level, University marks percentage instantly. BISE Lahore, Karachi, FBISE formula (Obtained/Total*100).">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Maaz Gul">
-<link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/marks-percentage-calculator.html">  <meta property="og:title" content="Marks Percentage Calculator – Calculate Exam Marks % | MaazCalc">
-<meta property="og:description" content="Calculate your exam marks percentage instantly using obtained marks and total marks with the free MaazCalc Marks Percentage Calculator.">
+<link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/marks-percentage-calculator.html">  
+<meta property="og:title" content="Marks Percentage Calculator Pakistan – Matric, Inter, O-Level">
+<meta property="og:description" content="Calculate your exam marks percentage instantly for all BISE boards in Pakistan. Best for Matric, Inter, O-Level, A-Level students.">
 <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/marks-percentage-calculator.html">  <meta property="og:type" content="website">
-
   <style>
-    :root{
-      --primary:#4f46e5;
-      --primary2:#7c3aed;
-      --bg:#f5f7fb;
-      --card:#fff;
-      --text:#172033;
-      --muted:#64748b;
-      --border:#e2e8f0;
-      --success:#059669;
-      --danger:#dc2626;
-      --shadow:0 14px 40px rgba(15,23,42,.08);
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-    }
-
-    .header{
-      background:linear-gradient(135deg,#4338ca,#7c3aed);
-      color:#fff;
-      padding:24px 18px 55px;
-    }
-
-    .nav{
-      max-width:1000px;
-      margin:auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-    }
-
-    .brand{
-      font-weight:800;
-      font-size:21px;
-    }
-
-    .hero{
-      max-width:800px;
-      margin:45px auto 0;
-      text-align:center;
-    }
-
-    .hero h1{
-      font-size:clamp(30px,5vw,48px);
-      margin:0 0 12px;
-    }
-
-    .hero p{
-      margin:0 auto;
-      max-width:680px;
-      color:#e9e7ff;
-      line-height:1.6;
-      font-size:17px;
-    }
-
-    .container{
-      max-width:1000px;
-      margin:-30px auto 45px;
-      padding:0 16px;
-    }
-
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:20px;
-      padding:24px;
-      box-shadow:var(--shadow);
-      margin-bottom:22px;
-    }
-
-    .calculator{
-      max-width:700px;
-      margin:auto;
-    }
-
-    .calculator h2{
-      margin-top:0;
-    }
-
-    .field{
-      margin:15px 0;
-    }
-
-    label{
-      display:block;
-      font-weight:700;
-      font-size:14px;
-      margin-bottom:7px;
-    }
-
-    input{
-      width:100%;
-      border:1px solid var(--border);
-      border-radius:11px;
-      padding:12px 13px;
-      font:inherit;
-      outline:none;
-    }
-
-    input:focus{
-      border-color:#818cf8;
-      box-shadow:0 0 0 3px rgba(99,102,241,.12);
-    }
-
-    .row{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
-
-    button{
-      width:100%;
-      border:0;
-      border-radius:11px;
-      padding:12px 16px;
-      background:var(--primary);
-      color:#fff;
-      cursor:pointer;
-      font-weight:800;
-      font:inherit;
-      margin-top:8px;
-    }
-
-    button:hover{
-      background:#4338ca;
-    }
-
-    .result{
-      display:none;
-      margin-top:18px;
-      padding:16px;
-      border-radius:14px;
-      background:#f8fafc;
-      border:1px solid var(--border);
-    }
-
-    .result.show{
-      display:block;
-    }
-
-    .result strong{
-      display:block;
-      font-size:25px;
-      margin-bottom:4px;
-    }
-
-    .good{color:var(--success)}
-    .bad{color:var(--danger)}
-
-    h2{
-      margin-top:0;
-    }
-
-    h3{
-      margin-bottom:7px;
-    }
-
-    p{
-      line-height:1.7;
-    }
-
-    .muted{
-      color:var(--muted);
-    }
-
-    .footer{
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-      padding:10px 16px 30px;
-    }
-
-    .footer a{
-      color:var(--primary);
-      text-decoration:none;
-    }
-
-    @media(max-width:600px){
-      .row{
-        grid-template-columns:1fr;
-      }
-
-      .card{
-        padding:19px;
-      }
-    }
+    :root{ --primary:#4f46e5; --primary2:#7c3aed; --bg:#f5f7fb; --card:#fff; --text:#172033; --muted:#64748b; --border:#e2e8f0; --success:#059669; --danger:#dc2626; --shadow:0 14px 40px rgba(15,23,42,.08); }
+    *{box-sizing:border-box} body{ margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
+    .header{ background:linear-gradient(135deg,#4338ca,#7c3aed); color:#fff; padding:24px 18px 55px; }
+    .nav{ max-width:1000px; margin:auto; display:flex; align-items:center; justify-content:space-between; }
+    .brand{ font-weight:800; font-size:21px; }
+    .hero{ max-width:800px; margin:45px auto 0; text-align:center; }
+    .hero h1{ font-size:clamp(30px,5vw,48px); margin:0 0 12px; }
+    .hero p{ margin:0 auto; max-width:680px; color:#e9e7ff; line-height:1.6; font-size:17px; }
+    .container{ max-width:1000px; margin:-30px auto 45px; padding:0 16px; }
+    .card{ background:var(--card); border:1px solid var(--border); border-radius:20px; padding:28px; box-shadow:var(--shadow); margin-bottom:22px; }
+    .calculator{ max-width:700px; margin:auto; }
+    .field{ margin:15px 0; } label{ display:block; font-weight:700; font-size:14px; margin-bottom:7px; }
+    input{ width:100%; border:1px solid var(--border); border-radius:11px; padding:12px 13px; font:inherit; outline:none; }
+    input:focus{ border-color:#818cf8; box-shadow:0 0 0 3px rgba(99,102,241,.12); }
+    .row{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    button{ width:100%; border:0; border-radius:11px; padding:13px 16px; background:var(--primary); color:#fff; cursor:pointer; font-weight:800; font-size:16px; margin-top:8px; }
+    button:hover{ background:#4338ca; }
+    .result{ display:none; margin-top:18px; padding:16px; border-radius:14px; background:#eef2ff; border:1px solid #c7d2fe; border-left:4px solid var(--primary); }
+    .result.show{ display:block; }
+    .result strong{ display:block; font-size:25px; margin-bottom:4px; }
+    .good{color:var(--success)} .bad{color:var(--danger)}
+    .formula{ background:#f8fafc; padding:12px; border-radius:8px; border:1px dashed #94a3b8; font-weight:bold; }
+    .grade-table{ width:100%; border-collapse:collapse; margin:15px 0; } .grade-table th, .grade-table td{ border:1px solid var(--border); padding:10px; text-align:left; } .grade-table th{ background:#f1f5f9; }
+    h2{ margin-top:0; color:var(--primary); } h3{ margin-bottom:7px; } p{ line-height:1.8; }
+    .muted{ color:var(--muted); }
+    .footer{ text-align:center; color:var(--muted); font-size:13px; padding:10px 16px 30px; } .footer a{ color:var(--primary); text-decoration:none; }
+    @media(max-width:600px){ .row{ grid-template-columns:1fr; } .card{ padding:20px; } }
   </style>
-
   <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"WebApplication",
-  "name":"MaazCalc Marks Percentage Calculator",
+  "name":"MaazCalc Marks Percentage Calculator Pakistan",
   "url":"https://maazgul.github.io/Percentage-Calculator/marks-percentage-calculator.html",
-  "description":"Free online Marks Percentage Calculator for calculating exam marks percentage from obtained marks and total marks.",
-  "applicationCategory":"CalculatorApplication",
+  "description":"Free online Marks Percentage Calculator for Pakistani students for Matric, Inter, O-Level, A-Level, BISE boards.",
+  "applicationCategory":"EducationApplication",
   "operatingSystem":"Any",
-  "browserRequirements":"Requires JavaScript",
-  "author":{
-    "@type":"Person",
-    "name":"Maaz Gul"
-  }
+  "author":{ "@type":"Person", "name":"Maaz Gul" },
+  "offers": { "@type":"Offer", "price":"0", "priceCurrency":"PKR" }
 }
 </script>
   <script type="application/ld+json">
@@ -227,264 +58,176 @@
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"How do I calculate marks percentage?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Divide your obtained marks by the total marks and multiply the result by 100. For example, 425 out of 500 equals 85%."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"What is the formula for marks percentage?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"The formula is (Obtained Marks ÷ Total Marks) × 100."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Can I use this calculator for exam results?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. You can use this calculator for school, college, university, tests, assignments and other exam marks."
-      }
-    }
+    { "@type":"Question", "name":"How do I calculate marks percentage for Matric in Pakistan?", "acceptedAnswer":{ "@type":"Answer", "text":"For Matric (BISE) in Pakistan, formula is (Obtained Marks / Total Marks) * 100. If you got 950 out of 1100, percentage is (950/1100)*100 = 86.36%. This applies to all BISE boards like Lahore, Karachi, Gujranwala, Faisalabad, FBISE Islamabad." } },
+    { "@type":"Question", "name":"What is the formula for marks percentage?", "acceptedAnswer":{ "@type":"Answer", "text":"The universal formula is (Obtained Marks ÷ Total Marks) × 100 = Percentage. For example, 425 out of 500 equals (425/500)*100 = 85%." } },
+    { "@type":"Question", "name":"How to calculate percentage for O-Level and A-Level?", "acceptedAnswer":{ "@type":"Answer", "text":"For O-Level/A-Level (Cambridge) in Pakistan, you can still use same formula: (Obtained Marks / Total Marks)*100. However, Cambridge also uses grades (A*, A, B). For example, 80% and above is generally A* grade. Use our calculator to find percentage then check grade chart." } },
+    { "@type":"Question", "name":"What is 80% marks in Pakistan grading system?", "acceptedAnswer":{ "@type":"Answer", "text":"In Pakistan BISE system, 80% and above is A+ Grade (Excellent). 70-79% is A Grade, 60-69% is B Grade, 50-59% is C Grade, 40-49% is D Grade, below 40% is Fail in most boards. Our calculator shows your grade automatically." } },
+    { "@type":"Question", "name":"Can I use this calculator for university CGPA percentage?", "acceptedAnswer":{ "@type":"Answer", "text":"This calculator is for marks percentage. For university, if you have CGPA, you need CGPA to percentage conversion. For many Pakistani universities, formula is (CGPA / 4)*100 or (CGPA * 25). For example, 3.2 CGPA = 80%. Check our dedicated GPA & CGPA Calculator." } },
+    { "@type":"Question", "name":"How to calculate marks percentage for Intermediate FSc?", "acceptedAnswer":{ "@type":"Answer", "text":"Same formula for FSc, FA, ICS, I.Com: (Obtained Marks / Total Marks)*100. If total is 1100 and you got 900, percentage is (900/1100)*100 = 81.81%. This is used for university admissions in Pakistan." } },
+    { "@type":"Question", "name":"Is this marks calculator accurate for BISE Lahore, Karachi, Gujranwala boards?", "acceptedAnswer":{ "@type":"Answer", "text":"Yes, 100% accurate for all BISE boards in Pakistan including Lahore, Karachi, Gujranwala, Faisalabad, Multan, Sargodha, Rawalpindi, and FBISE Islamabad, as well as for CBSE and ICSE boards in India using same formula." } },
+    { "@type":"Question", "name":"How to calculate percentage if total marks are 550?", "acceptedAnswer":{ "@type":"Answer", "text":"For 9th class or old Matric system where total is 550, formula is same: (Obtained/550)*100. For example, 450 out of 550 = (450/550)*100 = 81.81%." } },
+    { "@type":"Question", "name":"What is the difference between percentage and CGPA?", "acceptedAnswer":{ "@type":"Answer", "text":"Percentage is (Obtained/Total)*100 out of 100%. CGPA is Cumulative Grade Point Average out of 4.0 scale used in universities. Percentage shows direct marks, CGPA is average of grade points. You can convert CGPA to percentage by multiplying by 25 in Pakistan." } },
+    { "@type":"Question", "name":"Is MaazCalc marks percentage calculator free?", "acceptedAnswer":{ "@type":"Answer", "text":"Yes, MaazCalc Marks Percentage Calculator is completely free, fast, and secure. Created by Maaz Gul from Pakistan for students. All calculations happen in your browser and we do not save your marks, as per our Privacy Policy." } }
   ]
 }
 </script>
 </head>
-
 <body>
-
 <header class="header">
   <nav class="nav">
     <div class="brand">MaazCalc</div>
     <div>Free Online Calculator</div>
   </nav>
-
   <div class="hero">
-<h1>Marks Percentage Calculator</h1> 
-    <p>
-    Calculate your exam marks percentage instantly. Enter your obtained marks
-and total marks to find your percentage quickly with this free Marks Percentage Calculator. 
-    </p>
+<h1>Marks Percentage Calculator Pakistan</h1> 
+    <p>Calculate your Matric, Intermediate, O-Level, A-Level & University marks percentage instantly for all BISE boards in Pakistan.</p>
   </div>
 </header>
-
 <main class="container">
-
   <div class="card calculator">
     <h2>Calculate Marks Percentage</h2> 
-    <p class="muted">
-    Enter your obtained marks and total marks to calculate your exam percentage.
-    </p>
-
+    <p class="muted">Enter your obtained marks and total marks to calculate your exam percentage instantly. Best for BISE Lahore, Karachi, FBISE.</p>
     <div class="row">
       <div class="field">
-        <label>Obtained Marks</label>
-<input id="pct" type="number" step="any" placeholder="e.g. 425">
+        <label>Obtained Marks (Jo Number Aaye)</label>
+<input id="obtained" type="number" step="any" placeholder="e.g. 950">
       </div>
-
       <div class="field">
-        <label>Total Marks</label>
-<input id="num" type="number" step="any" placeholder="e.g. 500">
+        <label>Total Marks (Kul Number)</label>
+<input id="total" type="number" step="any" placeholder="e.g. 1100">
       </div>
     </div>
-
     <button onclick="calcPercent()">Calculate Marks Percentage</button>
     <div id="percentResult" class="result"></div>
   </div>
 
   <div class="card calculator">
-    <h2>Percentage Increase or Decrease</h2>
-    <p class="muted">
-      Enter the old value and new value to calculate the percentage change.
-    </p>
-
+    <h2>Percentage Increase or Decrease (For Improvement)</h2>
+    <p class="muted">Compare your old marks vs new marks to see improvement percentage.</p>
     <div class="row">
       <div class="field">
-        <label>Old Value</label>
-        <input id="oldVal" type="number" step="any" placeholder="e.g. 200">
+        <label>Old Marks / Old Value</label>
+        <input id="oldVal" type="number" step="any" placeholder="e.g. 800">
       </div>
-
       <div class="field">
-        <label>New Value</label>
-        <input id="newVal" type="number" step="any" placeholder="e.g. 250">
+        <label>New Marks / New Value</label>
+        <input id="newVal" type="number" step="any" placeholder="e.g. 950">
       </div>
     </div>
-
-    <button onclick="calcChange()">Calculate Change</button>
-
+    <button onclick="calcChange()">Calculate Improvement</button>
     <div id="changeResult" class="result"></div>
   </div>
 
   <div class="card">
+    <h2>How to Calculate Marks Percentage? – Complete Guide for Pakistani Students</h2>
+    <p>Marks percentage calculation is essential for every student in Pakistan, whether you are in Matric (9th, 10th), Intermediate (FSc, FA, ICS, I.Com), O-Level, A-Level, or University. Our Marks Percentage Calculator uses the official formula accepted by all BISE boards in Pakistan including BISE Lahore, Karachi, Gujranwala, Faisalabad, Multan, Sargodha, Rawalpindi, and FBISE Islamabad.</p>
+    <h3>Official Formula:</h3>
+    <p class="formula">Percentage = (Obtained Marks ÷ Total Marks) × 100</p>
+    <p><strong>Example 1 – Matric (1100 Marks):</strong> If you obtained 950 marks out of 1100 in Matric, your percentage is (950 ÷ 1100) × 100 = <strong>86.36%</strong>. This is A+ Grade.</p>
+    <p><strong>Example 2 – 9th Class (550 Marks):</strong> If you got 420 out of 550 in 9th class, percentage = (420 ÷ 550) × 100 = <strong>76.36%</strong>.</p>
+    <p><strong>Example 3 – FSc Pre-Medical:</strong> If you got 900 out of 1100 in FSc, percentage = (900/1100)*100 = <strong>81.81%</strong> which is required for MBBS admission in many medical colleges in Pakistan.</p>
+    
+    <h2>Pakistan Grading System (BISE Boards)</h2>
+    <p>After calculating percentage, you can check your grade as per Pakistani grading system:</p>
+    <table class="grade-table">
+      <tr><th>Percentage</th><th>Grade</th><th>Remarks</th></tr>
+      <tr><td>80% and Above</td><td>A+ Grade</td><td>Excellent – Top Position</td></tr>
+      <tr><td>70% to 79%</td><td>A Grade</td><td>Very Good</td></tr>
+      <tr><td>60% to 69%</td><td>B Grade</td><td>Good</td></tr>
+      <tr><td>50% to 59%</td><td>C Grade</td><td>Satisfactory</td></tr>
+      <tr><td>40% to 49%</td><td>D Grade</td><td>Pass</td></tr>
+      <tr><td>Below 40%</td><td>F Grade</td><td>Fail</td></tr>
+    </table>
+    <p>For O-Level and A-Level students (Cambridge) in Pakistan, grading is A*, A, B, C, D, E. Generally 90%+ is A*, 80%+ is A.</p>
 
-    <h2>How to Calculate Marks Percentage?</h2>
-    <p>
-      The marks percentage formula is:
-<strong>Percentage = (Obtained Marks ÷ Total Marks) × 100</strong>.
-    </p>
-
-    <p>
-      For example, if you obtain 425 marks out of 500:
-    </p>
-
-    <p>
-      (425 ÷ 500) × 100 = <strong>85%</strong>
-    </p>
-
-    <h2>How to Calculate Percentage Increase?</h2>
-
-    <p>
-      To calculate percentage increase, subtract the old value from the new
-      value, divide the difference by the old value, and multiply by 100.
-    </p>
-
-    <p>
-      <strong>
-        Percentage Increase = ((New Value − Old Value) ÷ Old Value) × 100
-      </strong>
-    </p>
-
-    <h2>How to Calculate Percentage Decrease?</h2>
-
-    <p>
-      To calculate percentage decrease, subtract the new value from the old
-      value, divide the difference by the old value, and multiply by 100.
-    </p>
-
-    <p>
-      <strong>
-        Percentage Decrease = ((Old Value − New Value) ÷ Old Value) × 100
-      </strong>
-    </p>
-
-    <h2>Marks Percentage Calculator Uses</h2>
-
-<p>
-  This Marks Percentage Calculator is useful for students calculating
-  school marks, college results, university exam percentages, test scores,
-  assignment marks and overall academic performance.
-</p>
-
-<p>
-  Simply enter your obtained marks and total marks to calculate the exact
-  percentage. For example, if you scored 425 marks out of 500, your
-  percentage is 85%.
-</p>
-<h2>How to Use the Marks Percentage Calculator</h2>
-
-<p>Follow these simple steps to calculate your exam percentage:</p>
-
-<ol>
-  <li>Enter your obtained marks in the <strong>Obtained Marks</strong> field.</li>
-  <li>Enter the maximum marks in the <strong>Total Marks</strong> field.</li>
-  <li>Click <strong>Calculate Marks Percentage</strong>.</li>
-  <li>Your marks percentage will be displayed instantly.</li>
-</ol>
-
-<p>
-  For example, if you obtained 425 marks out of 500, enter 425 as your
-  obtained marks and 500 as your total marks. The calculator will show
-  <strong>85%</strong>.
-</p>
+    <h2>How to Use the Marks Percentage Calculator – Step by Step</h2>
+    <ol>
+      <li>Enter your <strong>Obtained Marks</strong> (e.g., 850) in the first field.</li>
+      <li>Enter the <strong>Total Marks</strong> (e.g., 1100 for Matric/Inter) in the second field.</li>
+      <li>Click <strong>Calculate Marks Percentage</strong> button.</li>
+      <li>Your exact percentage and grade will be displayed instantly with Pakistani grading system.</li>
+      <li>For improvement calculation, use second calculator to compare old vs new marks.</li>
+    </ol>
+    <p>This tool is useful for calculating school marks, college results, university exam percentages, test scores, assignment marks, and overall academic performance for admissions.</p>
   </div>
 
   <div class="card">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <h3>How do I calculate marks percentage?</h3>
-<p class="muted">
-  Divide your obtained marks by the total marks and multiply the result by
-  100. For example, 425 out of 500 equals 85%.
-</p>
+    <h2>Frequently Asked Questions – Marks Percentage</h2>
+    <h3>How do I calculate marks percentage for Matric in Pakistan?</h3>
+    <p class="muted">For Matric (BISE) in Pakistan, formula is (Obtained Marks / Total Marks) * 100. If you got 950 out of 1100, percentage is (950/1100)*100 = 86.36%. This applies to all BISE boards like Lahore, Karachi, Gujranwala, Faisalabad, FBISE Islamabad.</p>
     <h3>What is the formula for marks percentage?</h3>
-<p class="muted">
-  The formula is (Obtained Marks ÷ Total Marks) × 100.
-</p>
-    <h3>Can I use this calculator for exam results?</h3>
-<p class="muted">
-  Yes. You can use this calculator for school, college, university,
-  tests, assignments and other exam marks.
-</p>
+    <p class="muted">The universal formula is (Obtained Marks ÷ Total Marks) × 100 = Percentage. For example, 425 out of 500 equals (425/500)*100 = 85%.</p>
+    <h3>How to calculate percentage for O-Level and A-Level?</h3>
+    <p class="muted">For O-Level/A-Level (Cambridge) in Pakistan, you can still use same formula: (Obtained Marks / Total Marks)*100. However, Cambridge also uses grades (A*, A, B). For example, 80% and above is generally A* grade.</p>
+    <h3>What is 80% marks in Pakistan grading system?</h3>
+    <p class="muted">In Pakistan BISE system, 80% and above is A+ Grade (Excellent), 70-79% is A Grade, 60-69% is B Grade, 50-59% is C Grade, 40-49% is D Grade, below 40% is Fail.</p>
+    <h3>Can I use this calculator for university CGPA percentage?</h3>
+    <p class="muted">This calculator is for marks percentage. For university CGPA to percentage conversion, many Pakistani universities use (CGPA / 4)*100 or (CGPA * 25). For example, 3.2 CGPA = 80%. Check our dedicated <a href="gpa-cgpa-calculator.html">GPA & CGPA Calculator</a>.</p>
+    <h3>How to calculate marks percentage for Intermediate FSc?</h3>
+    <p class="muted">Same formula for FSc, FA, ICS, I.Com: (Obtained Marks / Total Marks)*100. If total is 1100 and you got 900, percentage is 81.81% which is used for university admissions in Pakistan.</p>
+    <h3>Is this marks calculator accurate for BISE Lahore, Karachi, Gujranwala boards?</h3>
+    <p class="muted">Yes, 100% accurate for all BISE boards in Pakistan including Lahore, Karachi, Gujranwala, Faisalabad, Multan, Sargodha, Rawalpindi, and FBISE Islamabad, as well as for CBSE boards.</p>
+    <h3>How to calculate percentage if total marks are 550?</h3>
+    <p class="muted">For 9th class where total is 550, formula is same: (Obtained/550)*100. For example, 450 out of 550 = 81.81%.</p>
+    <h3>What is the difference between percentage and CGPA?</h3>
+    <p class="muted">Percentage is (Obtained/Total)*100 out of 100%. CGPA is Cumulative Grade Point Average out of 4.0 scale used in universities. You can convert CGPA to percentage by multiplying by 25 in Pakistan.</p>
+    <h3>Is MaazCalc marks percentage calculator free?</h3>
+    <p class="muted">Yes, MaazCalc Marks Percentage Calculator is completely free, fast, and secure. Created by Maaz Gul from Pakistan for students. All calculations happen in your browser and we do not save your marks.</p>
   </div>
 <div class="card">
-  <h2>More Free Calculators</h2>
-
-  <p>
-    Try our
-    <a href="index.html">Free All-in-One Calculator</a>
-    for percentage, discount, profit and loss, GPA and CGPA calculations.
-  </p>
+  <h2>More Free Calculators for Pakistani Students</h2>
+  <p>Try our <a href="percentage-calculator.html">Percentage Calculator</a> for general percentage, <a href="discount-calculator.html">Discount Calculator in PKR</a> for shopping, <a href="profit-loss-calculator.html">Profit & Loss Calculator</a> for business, and <a href="gpa-cgpa-calculator.html">GPA & CGPA Calculator</a> for university.</p>
+  <p><a href="index.html">← Back to All-in-One Calculator (Home)</a></p>
 </div>
 </main>
-
 <footer class="footer">
-  © <span id="year"></span> MaazCalc ·
-  <a href="index.html">Home</a> |
-  <a href="about.html">About Us</a> |
-  <a href="contact.html">Contact Us</a> |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms.html">Terms & Conditions</a>
+  © <span id="year"></span> MaazCalc · Made for Students in Pakistan by Maaz Gul<br>
+  <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a>
 </footer>
-
 <script>
-function fmt(x){
-  return Number(x).toLocaleString(undefined,{
-    maximumFractionDigits:2
-  });
+function fmt(x){ return Number(x).toLocaleString(undefined,{ maximumFractionDigits:2 }); }
+function getGrade(p){
+  if(p>=80) return "A+ Grade (Excellent)";
+  if(p>=70) return "A Grade (Very Good)";
+  if(p>=60) return "B Grade (Good)";
+  if(p>=50) return "C Grade (Satisfactory)";
+  if(p>=40) return "D Grade (Pass)";
+  return "F Grade (Fail)";
 }
-
 function calcPercent(){
-  const obtained=parseFloat(document.getElementById('pct').value);
-  const total=parseFloat(document.getElementById('num').value);
+  const obtained=parseFloat(document.getElementById('obtained').value);
+  const total=parseFloat(document.getElementById('total').value);
   const result=document.getElementById('percentResult');
-
   if(!Number.isFinite(obtained)||!Number.isFinite(total)||total===0){
     result.innerHTML='Please enter valid marks. Total marks cannot be 0.';
     result.classList.add('show');
     return;
   }
-
+  if(obtained>total){
+    result.innerHTML='Obtained marks cannot be greater than total marks. Please check.';
+    result.classList.add('show');
+    return;
+  }
   const percentage=(obtained/total)*100;
-
-  result.innerHTML=
-    `<strong>${fmt(percentage)}% Marks Percentage</strong>
-     <small>${fmt(obtained)} out of ${fmt(total)} marks</small>`;
-
+  const grade = getGrade(percentage);
+  result.innerHTML= `<strong>${fmt(percentage)}% Marks Percentage</strong><small>${fmt(obtained)} out of ${fmt(total)} marks</small><br><strong>Grade: ${grade}</strong><br><small style='color:#64748b'>For BISE Pakistan Grading System</small>`;
   result.classList.add('show');
 }
 function calcChange(){
   const oldValue=parseFloat(document.getElementById('oldVal').value);
   const newValue=parseFloat(document.getElementById('newVal').value);
   const result=document.getElementById('changeResult');
-
   if(!Number.isFinite(oldValue)||!Number.isFinite(newValue)||oldValue===0){
     result.innerHTML='Please enter valid values. Old value cannot be 0.';
     result.classList.add('show');
     return;
   }
-
   const diff=newValue-oldValue;
   const pct=Math.abs(diff)/Math.abs(oldValue)*100;
-
-  result.innerHTML=
-    `<strong class="${diff>=0?'good':'bad'}">
-      ${diff>=0?'▲ Increase':'▼ Decrease'}: ${fmt(pct)}%
-    </strong>
-    <small>
-      Change: ${fmt(diff)} (${fmt(oldValue)} → ${fmt(newValue)})
-    </small>`;
-
+  result.innerHTML= `<strong class="${diff>=0?'good':'bad'}">${diff>=0?'▲ Improvement':'▼ Decrease'}: ${fmt(pct)}%</strong><small>Change: ${fmt(diff)} marks (${fmt(oldValue)} → ${fmt(newValue)})</small>`;
   result.classList.add('show');
 }
-
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-
 </body>
 </html>

@@ -1,411 +1,138 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Profit and Loss Calculator – Calculate Profit/Loss % | MaazCalc</title>
-
-  <meta name="description" content="Use our free Profit and Loss Calculator to calculate profit or loss amount and percentage instantly. Enter cost price and selling price to get accurate results.">
-
+  <title>Profit and Loss Calculator Pakistan – Profit % in PKR | MaazCalc</title>
+  <meta name="description" content="Free Profit and Loss Calculator Pakistan – Calculate profit, loss, profit % in PKR for shopkeepers, business, Daraz sellers. Cost Price & Selling Price.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="MaazCalc">
-
+  <meta name="author" content="Maaz Gul">
   <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/profit-loss-calculator.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Profit and Loss Calculator | MaazCalc">
-  <meta property="og:description" content="Calculate profit or loss amount and percentage instantly with the free MaazCalc Profit and Loss Calculator.">
+  <meta property="og:title" content="Profit and Loss Calculator Pakistan – Profit % in PKR">
+  <meta property="og:description" content="Calculate profit, loss, profit % in PKR for Pakistani shopkeepers & businesses. Free MaazCalc tool.">
   <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/profit-loss-calculator.html">
   <meta property="og:type" content="website">
-
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RF7FP7578"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4RF7FP7578');
-  </script>
-
-  <!-- WebApplication Schema -->
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4RF7FP7578'); </script>
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Profit and Loss Calculator",
-    "url": "https://maazgul.github.io/Percentage-Calculator/profit-loss-calculator.html",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "All",
-    "description": "Free online calculator to calculate profit or loss amount and percentage."
+    "@context": "https://schema.org", "@type": "WebApplication", "name": "MaazCalc Profit and Loss Calculator Pakistan", "url": "https://maazgul.github.io/Percentage-Calculator/profit-loss-calculator.html", "applicationCategory": "BusinessApplication", "operatingSystem": "All", "description": "Free online calculator for Pakistani shopkeepers to calculate profit, loss, profit % in PKR.", "author": { "@type":"Person", "name":"Maaz Gul" }, "offers": { "@type":"Offer", "price":"0", "priceCurrency":"PKR" }
   }
   </script>
-
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+    "@context": "https://schema.org", "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How is profit calculated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Profit is calculated by subtracting the cost price from the selling price. Profit = Selling Price − Cost Price."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is loss calculated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Loss is calculated by subtracting the selling price from the cost price. Loss = Cost Price − Selling Price."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is profit percentage calculated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Profit percentage is calculated as Profit divided by Cost Price multiplied by 100."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is loss percentage calculated?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Loss percentage is calculated as Loss divided by Cost Price multiplied by 100."
-        }
-      }
+      { "@type": "Question", "name": "How is profit calculated in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "Profit = Selling Price - Cost Price in PKR. For example, if you buy product for 1000 PKR (cost price) and sell for 1250 PKR (selling price), profit = 1250-1000 = 250 PKR profit." } },
+      { "@type": "Question", "name": "How is loss calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Loss = Cost Price - Selling Price. If cost price 1000 PKR and selling price 800 PKR, loss = 1000-800 = 200 PKR loss. Common for Pakistani shopkeepers during sale." } },
+      { "@type": "Question", "name": "How is profit percentage calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Profit % = (Profit / Cost Price) * 100. Example: Cost 1000 PKR, Sell 1250 PKR, Profit 250 PKR, Profit % = (250/1000)*100 = 25% profit margin." } },
+      { "@type": "Question", "name": "How is loss percentage calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Loss % = (Loss / Cost Price) * 100. Example: Cost 1000 PKR, Sell 800 PKR, Loss 200 PKR, Loss % = (200/1000)*100 = 20% loss." } },
+      { "@type": "Question", "name": "What is good profit margin for small business in Pakistan?", "acceptedAnswer": { "@type": "Answer", "text": "For small businesses and shopkeepers in Pakistan (kirana, mobile shop, Daraz sellers), good profit margin is typically 15% to 40% depending on product. Grocery 10-20%, clothes 30-50%, mobile accessories 40-100%." } },
+      { "@type": "Question", "name": "How to calculate profit for Daraz sellers?", "acceptedAnswer": { "@type": "Answer", "text": "Daraz sellers: Cost Price includes product cost + Daraz commission + delivery + packaging. Selling Price is what customer pays. Profit = Selling Price - Total Cost Price. Use our calculator to find profit % after all costs." } },
+      { "@type": "Question", "name": "How to calculate profit if there is discount?", "acceptedAnswer": { "@type": "Answer", "text": "First calculate selling price after discount using Discount Calculator, then use that as selling price in profit calculator. Example: Cost 2000 PKR, Original Sell 3000 PKR, but you give 10% discount (300 PKR), final sell = 2700 PKR, profit = 700 PKR (35%)." } },
+      { "@type": "Question", "name": "What is difference between profit and profit margin?", "acceptedAnswer": { "@type": "Answer", "text": "Profit is amount in PKR (e.g., 250 PKR). Profit margin or profit percentage is profit as % of cost price (e.g., 25%). Margin helps compare profitability of different products." } },
+      { "@type": "Question", "name": "How to avoid loss in business?", "acceptedAnswer": { "@type": "Answer", "text": "To avoid loss, always set selling price higher than total cost price including rent, electricity, delivery. Calculate profit % before selling. Keep margin at least 15% for Pakistani small businesses to cover expenses." } },
+      { "@type": "Question", "name": "Is MaazCalc profit loss calculator free for Pakistani shopkeepers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, MaazCalc Profit and Loss Calculator is 100% free, accurate in PKR, created by Maaz Gul for Pakistani shopkeepers, students, and small businesses. Works in browser, no data stored." } }
     ]
   }
   </script>
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #111827;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-    }
-
-    header p {
-      margin: 0;
-      color: #d1d5db;
-    }
-
-    .container {
-      max-width: 850px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      margin-bottom: 25px;
-    }
-
-    .calculator h2 {
-      margin-top: 0;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 7px;
-      font-size: 16px;
-    }
-
-    button {
-      width: 100%;
-      padding: 13px;
-      margin-top: 20px;
-      border: none;
-      border-radius: 7px;
-      background: #111827;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    .result {
-      margin-top: 20px;
-      padding: 15px;
-      background: #f3f4f6;
-      border-radius: 8px;
-      display: none;
-    }
-
-    .result.show {
-      display: block;
-    }
-
-    .profit {
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .loss {
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .seo-content h2,
-    .faq h2 {
-      margin-top: 25px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px 15px;
-      background: #111827;
-      color: #d1d5db;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 26px;
-      }
-
-      .card {
-        padding: 20px;
-      }
-    }
+    * { box-sizing: border-box; } body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #222; line-height: 1.8; }
+    header { background: #111827; color: white; padding: 35px 20px; text-align: center; } header h1 { margin: 0 0 10px; font-size: 32px; } header p { margin: 0; color: #d1d5db; }
+    .container { max-width: 850px; margin: 30px auto; padding: 0 15px; } .card { background: white; padding: 28px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 25px; }
+    .calculator h2 { margin-top: 0; color: #111827; } label { display: block; margin-top: 15px; margin-bottom: 6px; font-weight: bold; } input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 7px; font-size: 16px; } input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,.15); outline:none; }
+    button { width: 100%; padding: 13px; margin-top: 20px; border: none; border-radius: 7px; background: #111827; color: white; font-size: 16px; cursor: pointer; font-weight:bold; } button:hover { background: #4f46e5; }
+    .result { margin-top: 20px; padding: 18px; background: #eef2ff; border-radius: 10px; display: none; border-left: 4px solid #4f46e5; } .result.show { display: block; } .profit { font-weight: bold; font-size: 24px; color: #059669; } .loss { font-weight: bold; font-size: 24px; color: #dc2626; }
+    .formula{ background:#f8fafc; padding:12px; border-radius:8px; border:1px dashed #94a3b8; font-weight:bold; margin:10px 0; }
+    .seo-content h2, .faq h2 { margin-top: 25px; color: #111827; } footer { text-align: center; padding: 25px 15px; background: #111827; color: #d1d5db; margin-top: 40px; } footer a { color: white; text-decoration: none; margin: 0 8px; } footer a:hover { text-decoration: underline; color: #a5b4fc; }
+    @media (max-width: 600px) { header h1 { font-size: 26px; } .card { padding: 20px; } }
   </style>
 </head>
-
 <body>
-
 <header>
-  <h1>Profit and Loss Calculator</h1>
-  <p>Calculate profit, loss and percentage instantly</p>
+  <h1>Profit and Loss Calculator Pakistan</h1>
+  <p>Calculate profit, loss and profit % in PKR for shopkeepers & business</p>
 </header>
-
 <main class="container">
-
   <section class="card calculator">
-    <h2>Calculate Profit or Loss</h2>
-
-    <label for="costPrice">Cost Price</label>
-    <input
-      type="number"
-      id="costPrice"
-      placeholder="Enter cost price"
-      min="0"
-      step="any"
-    >
-
-    <label for="sellPrice">Selling Price</label>
-    <input
-      type="number"
-      id="sellPrice"
-      placeholder="Enter selling price"
-      min="0"
-      step="any"
-    >
-
-    <button onclick="calculateProfitLoss()">Calculate</button>
-
+    <h2>Calculate Profit or Loss in PKR</h2>
+    <p style="color:#64748b; margin-top:0;">For Pakistani shopkeepers, Daraz sellers, small businesses & students.</p>
+    <label for="costPrice">Cost Price (Kharid Price) in PKR</label>
+    <input type="number" id="costPrice" placeholder="e.g. 1000 - Kitne me kharida?" min="0" step="any">
+    <label for="sellPrice">Selling Price (Frokht Price) in PKR</label>
+    <input type="number" id="sellPrice" placeholder="e.g. 1250 - Kitne me becha?" min="0" step="any">
+    <button onclick="calculateProfitLoss()">Calculate Profit / Loss</button>
     <div id="result" class="result"></div>
   </section>
-
   <section class="card seo-content">
-
-    <h2>What is Profit and Loss?</h2>
-
-    <p>
-      Profit and loss are commonly used to measure the result of buying and
-      selling goods or products. When the selling price is higher than the
-      cost price, you make a profit. When the selling price is lower than the
-      cost price, you experience a loss.
-    </p>
-
-    <h2>Profit Formula</h2>
-
-    <p>
-      <strong>Profit = Selling Price − Cost Price</strong>
-    </p>
-
-    <p>
-      Profit percentage is calculated using:
-      <strong>Profit Percentage = (Profit ÷ Cost Price) × 100</strong>
-    </p>
-
-    <h2>Loss Formula</h2>
-
-    <p>
-      <strong>Loss = Cost Price − Selling Price</strong>
-    </p>
-
-    <p>
-      Loss percentage is calculated using:
-      <strong>Loss Percentage = (Loss ÷ Cost Price) × 100</strong>
-    </p>
-
-    <h2>Example of Profit</h2>
-
-    <p>
-      If the cost price of a product is 1,000 and the selling price is 1,250,
-      the profit is 250. The profit percentage is 25%.
-    </p>
-
-    <h2>Example of Loss</h2>
-
-    <p>
-      If the cost price is 1,000 and the selling price is 800, the loss is 200.
-      The loss percentage is 20%.
-    </p>
-
-    <h2>How to Use the Profit and Loss Calculator?</h2>
-
-    <p>
-      Enter the cost price of the product in the first box and the selling
-      price in the second box. Click the Calculate button to instantly find
-      the profit or loss amount and its percentage.
-    </p>
-
+    <h2>What is Profit and Loss? – Guide for Pakistan</h2>
+    <p>Profit and loss (Nafa aur Nuqsan) are the most important concepts for every shopkeeper, small business owner, Daraz seller, and student in Pakistan. When your selling price (Frokht Keemat) is higher than cost price (Kharid Keemat), you make profit (Nafa). When selling price is lower than cost price, you face loss (Nuqsan). Understanding profit percentage helps you set correct prices for your shop in Lahore, Karachi, Islamabad, or online business.</p>
+    <h2>Profit Formulas in PKR</h2>
+    <p class="formula">Profit (Nafa) = Selling Price − Cost Price</p>
+    <p class="formula">Profit % = (Profit ÷ Cost Price) × 100</p>
+    <p><strong>Example for Pakistani Shopkeeper:</strong> You buy a shirt for 1000 PKR from Shah Alam Market Lahore (cost price) and sell it for 1250 PKR in your shop (selling price). Profit = 1250 - 1000 = 250 PKR. Profit % = (250 ÷ 1000) × 100 = 25% profit margin. This is good profit for clothes business.</p>
+    <h2>Loss Formulas in PKR</h2>
+    <p class="formula">Loss (Nuqsan) = Cost Price − Selling Price</p>
+    <p class="formula">Loss % = (Loss ÷ Cost Price) × 100</p>
+    <p><strong>Example:</strong> You bought mobile covers for 1000 PKR stock, but due to low demand you sell for 800 PKR. Loss = 1000 - 800 = 200 PKR. Loss % = (200 ÷ 1000) × 100 = 20% loss.</p>
+    <h2>How to Use Profit and Loss Calculator – Step by Step</h2>
+    <ol>
+      <li>Enter <strong>Cost Price in PKR</strong> – Kitne me kharida including all expenses (e.g., 1000).</li>
+      <li>Enter <strong>Selling Price in PKR</strong> – Kitne me becha (e.g., 1250).</li>
+      <li>Click <strong>Calculate</strong> button.</li>
+      <li>Our calculator instantly shows if you made Profit or Loss, amount in PKR, and Profit/Loss Percentage %.</li>
+      <li>For Daraz sellers, add Daraz commission (e.g., 15%), delivery cost in cost price for accurate profit.</li>
+    </ol>
+    <h2>Good Profit Margin for Small Business in Pakistan</h2>
+    <p>For small businesses in Pakistan, good profit margin depends on product type:</p>
+    <ul>
+      <li><strong>Kirana / Grocery Store:</strong> 10% – 20% margin</li>
+      <li><strong>Clothes / Garments:</strong> 30% – 60% margin</li>
+      <li><strong>Mobile Accessories:</strong> 40% – 100% margin</li>
+      <li><strong>Daraz / Online Selling:</strong> 15% – 35% after Daraz fees</li>
+      <li><strong>Food / Restaurant:</strong> 50% – 80% margin</li>
+    </ul>
+    <p>Always calculate profit % before deciding selling price. Use our <a href="discount-calculator.html">Discount Calculator</a> if you want to give discount and still make profit.</p>
+    <h2>Why Use MaazCalc Profit Calculator?</h2>
+    <p>MaazCalc Profit and Loss Calculator is specially designed for Pakistani shopkeepers, business owners, and students. 100% free, fast, works in browser, no data stored, accurate in PKR. Created by Maaz Gul from Pakistan. Also try our other tools like <a href="percentage-calculator.html">Percentage Calculator</a> and <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a>.</p>
   </section>
-
   <section class="card faq">
-
-    <h2>Frequently Asked Questions</h2>
-
-    <h3>How is profit calculated?</h3>
-    <p>
-      Profit is calculated by subtracting the cost price from the selling price.
-      Profit = Selling Price − Cost Price.
-    </p>
-
-    <h3>How is loss calculated?</h3>
-    <p>
-      Loss is calculated by subtracting the selling price from the cost price.
-      Loss = Cost Price − Selling Price.
-    </p>
-
-    <h3>How is profit percentage calculated?</h3>
-    <p>
-      Profit percentage = (Profit ÷ Cost Price) × 100.
-    </p>
-
-    <h3>How is loss percentage calculated?</h3>
-    <p>
-      Loss percentage = (Loss ÷ Cost Price) × 100.
-    </p>
-
+    <h2>Frequently Asked Questions – Profit & Loss Pakistan</h2>
+    <h3>How is profit calculated in Pakistan?</h3><p>Profit = Selling Price - Cost Price in PKR. Example: Buy for 1000 PKR, Sell for 1250 PKR, Profit = 250 PKR.</p>
+    <h3>How is loss calculated?</h3><p>Loss = Cost Price - Selling Price. If cost 1000 PKR and sell 800 PKR, loss = 200 PKR. Common during sale season.</p>
+    <h3>How is profit percentage calculated?</h3><p>Profit % = (Profit / Cost Price) * 100. Example: Cost 1000, Sell 1250, Profit 250, Profit % = 25% margin.</p>
+    <h3>How is loss percentage calculated?</h3><p>Loss % = (Loss / Cost Price) * 100. Example: Cost 1000, Sell 800, Loss 200, Loss % = 20%.</p>
+    <h3>What is good profit margin for small business in Pakistan?</h3><p>Good margin is 15% to 40% for small businesses. Grocery 10-20%, clothes 30-50%, mobile accessories 40-100% as per Pakistani bazaar trends.</p>
+    <h3>How to calculate profit for Daraz sellers?</h3><p>Daraz sellers: Total Cost = Product Cost + Daraz Commission + Delivery + Packaging. Profit = Customer Payment - Total Cost. Calculate profit % after all costs using our tool.</p>
+    <h3>How to calculate profit if there is discount?</h3><p>First calculate selling price after discount using our Discount Calculator, then use that as selling price in profit calculator. Example: Cost 2000, Sell 3000, 10% discount = 2700 final sell, profit = 700 PKR (35%).</p>
+    <h3>What is difference between profit and profit margin?</h3><p>Profit is amount in PKR (250 PKR). Profit margin is % (25%). Margin helps compare different products profitability.</p>
+    <h3>How to avoid loss in business?</h3><p>Always set selling price higher than total cost including rent, electricity, delivery. Keep margin at least 15% for Pakistani businesses to cover expenses and make profit.</p>
+    <h3>Is MaazCalc profit loss calculator free for Pakistani shopkeepers?</h3><p>Yes, 100% free, accurate in PKR, created by Maaz Gul for Pakistani shopkeepers and businesses. Works in browser, no data stored as per our Privacy Policy.</p>
   </section>
-<div class="card">
-  <h2>More Free Calculators</h2>
-
-  <p>
-    Try our
-    <a href="index.html">Free All-in-One Calculator</a>
-    for percentage, marks, discount, profit and loss, GPA and CGPA calculations.
-  </p>
-</div>
+<div class="card"><h2>More Free Calculators</h2><p>Try our <a href="index.html">Free All-in-One Calculator</a>, <a href="percentage-calculator.html">Percentage Calculator</a>, <a href="discount-calculator.html">Discount Calculator in PKR</a>, <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a>, <a href="gpa-cgpa-calculator.html">GPA & CGPA Calculator</a> for Pakistani students.</p></div>
 </main>
-
-<footer>
-  <p>© <span id="year"></span> MaazCalc. All rights reserved.</p>
-
-  <p>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a> 
-    <a href="contact.html">Contact Us</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms.html">Terms & Conditions</a> 
-  </p>
-</footer>
-
+<footer><p>© <span id="year"></span> MaazCalc – Made for Shopkeepers & Businesses in Pakistan by Maaz Gul</p><p><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a></p></footer>
 <script>
 function calculateProfitLoss() {
-
   const cost = parseFloat(document.getElementById("costPrice").value);
   const sell = parseFloat(document.getElementById("sellPrice").value);
   const result = document.getElementById("result");
-
   if (!Number.isFinite(cost) || !Number.isFinite(sell) || cost <= 0 || sell < 0) {
-    result.innerHTML = "Please enter valid values.";
-    result.classList.add("show");
-    return;
+    result.innerHTML = "Please enter valid values. Cost Price must be greater than 0.";
+    result.classList.add("show"); return;
   }
-
   const difference = sell - cost;
   const percentage = Math.abs(difference) / cost * 100;
-
   if (difference > 0) {
-    result.innerHTML =
-      '<div class="profit">Profit: ' + difference.toLocaleString(undefined, {
-        maximumFractionDigits: 2
-      }) + '</div>' +
-      '<p>Profit Percentage: ' + percentage.toLocaleString(undefined, {
-        maximumFractionDigits: 2
-      }) + '%</p>';
+    result.innerHTML = '<div class="profit">✓ Profit: ' + difference.toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' PKR</div><p>Profit Percentage: ' + percentage.toLocaleString(undefined, { maximumFractionDigits: 2 }) + '% Margin</p><p style="font-size:13px;color:#059669;">You made profit! Good for business in Pakistan.</p>';
+  } else if (difference < 0) {
+    result.innerHTML = '<div class="loss">✗ Loss: ' + Math.abs(difference).toLocaleString(undefined, { maximumFractionDigits: 2 }) + ' PKR</div><p>Loss Percentage: ' + percentage.toLocaleString(undefined, { maximumFractionDigits: 2 }) + '%</p><p style="font-size:13px;color:#dc2626;">You made loss. Increase selling price.</p>';
+  } else {
+    result.innerHTML = '<div class="profit" style="color:#4f46e5">No Profit, No Loss (0 PKR)</div><p>Break-even point. Cost = Selling Price.</p>';
   }
-
-  else if (difference < 0) {
-    result.innerHTML =
-      '<div class="loss">Loss: ' + Math.abs(difference).toLocaleString(undefined, {
-        maximumFractionDigits: 2
-      }) + '</div>' +
-      '<p>Loss Percentage: ' + percentage.toLocaleString(undefined, {
-        maximumFractionDigits: 2
-      }) + '%</p>';
-  }
-
-  else {
-    result.innerHTML =
-      '<div class="profit">No Profit, No Loss</div>' +
-      '<p>Profit/Loss Percentage: 0%</p>';
-  }
-
   result.classList.add("show");
 }
-
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
-```

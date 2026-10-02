@@ -3,486 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>GPA & CGPA Calculator – Calculate GPA Online | MaazCalc</title>
-
-  <meta name="description" content="Use our free GPA and CGPA Calculator to calculate weighted GPA based on grade points and credit hours. Simple, fast and easy online calculator.">
-
+  <title>GPA & CGPA Calculator Pakistan – FAST, NUST, UET, KU | MaazCalc</title>
+  <meta name="description" content="Free GPA & CGPA Calculator Pakistan – Calculate weighted GPA for FAST, NUST, LUMS, UET, Karachi University, Punjab University. Grade Points × Credit Hours.">
   <meta name="robots" content="index, follow">
-
   <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/gpa-cgpa-calculator.html">
-
-  <meta property="og:title" content="GPA & CGPA Calculator – Calculate GPA Online | MaazCalc">
-  <meta property="og:description" content="Free online GPA and CGPA calculator. Calculate weighted GPA using grade points and credit hours.">
+  <meta property="og:title" content="GPA & CGPA Calculator Pakistan – FAST, NUST, UET">
+  <meta property="og:description" content="Free GPA & CGPA Calculator for Pakistani universities – FAST, NUST, LUMS, UET, KU, PU. Calculate weighted GPA using credit hours.">
   <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/gpa-cgpa-calculator.html">
   <meta property="og:type" content="website">
-
   <meta name="author" content="Maaz Gul">
   <meta name="theme-color" content="#4f46e5">
-
   <style>
-    *{
-      box-sizing:border-box;
-    }
-
-    body{
-      margin:0;
-      font-family:Arial,Helvetica,sans-serif;
-      background:#f5f7fb;
-      color:#1f2937;
-    }
-
-    .container{
-      max-width:900px;
-      margin:0 auto;
-      padding:25px 16px 50px;
-    }
-
-    header{
-      text-align:center;
-      padding:20px 0 25px;
-    }
-
-    header h1{
-      margin:0 0 10px;
-      font-size:32px;
-      color:#111827;
-    }
-
-    header p{
-      margin:0;
-      color:#6b7280;
-      font-size:16px;
-    }
-
-    .card{
-      background:#fff;
-      border-radius:14px;
-      padding:24px;
-      margin-bottom:22px;
-      box-shadow:0 4px 15px rgba(0,0,0,.07);
-    }
-
-    .card h2{
-      margin-top:0;
-      color:#111827;
-    }
-
-    .subject{
-      display:grid;
-      grid-template-columns:1.5fr 1fr 1fr auto;
-      gap:10px;
-      margin-bottom:12px;
-      align-items:center;
-    }
-
-    input{
-      width:100%;
-      padding:12px;
-      border:1px solid #d1d5db;
-      border-radius:8px;
-      font-size:15px;
-    }
-
-    button{
-      border:0;
-      border-radius:8px;
-      padding:12px 16px;
-      cursor:pointer;
-      font-size:15px;
-      font-weight:600;
-    }
-
-    .primary{
-      background:#4f46e5;
-      color:#fff;
-    }
-
-    .secondary{
-      background:#e5e7eb;
-      color:#111827;
-    }
-
-    .remove{
-      background:#fee2e2;
-      color:#b91c1c;
-      padding:10px 14px;
-      font-size:18px;
-    }
-
-    .actions{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:18px;
-    }
-
-    .result{
-      display:none;
-      margin-top:18px;
-      padding:16px;
-      background:#eef2ff;
-      border-radius:10px;
-      text-align:center;
-    }
-
-    .result.show{
-      display:block;
-    }
-
-    .result strong{
-      display:block;
-      font-size:28px;
-      color:#3730a3;
-      margin-bottom:6px;
-    }
-
-    .result small{
-      color:#4b5563;
-      font-size:14px;
-    }
-
-    .seo-content h2{
-      margin-top:28px;
-    }
-
-    .seo-content h2:first-child{
-      margin-top:0;
-    }
-
-    .seo-content p{
-      line-height:1.7;
-      color:#4b5563;
-    }
-
-    .seo-content a{
-      color:#4f46e5;
-      text-decoration:none;
-      font-weight:600;
-    }
-
-    .faq{
-      border-top:1px solid #e5e7eb;
-      padding:16px 0;
-    }
-
-    .faq:first-child{
-      border-top:0;
-    }
-
-    .faq h3{
-      margin:0 0 8px;
-      font-size:17px;
-    }
-
-    .faq p{
-      margin:0;
-    }
-
-    .footer{
-      text-align:center;
-      color:#6b7280;
-      font-size:14px;
-      padding:25px 10px;
-    }
-
-    .footer a{
-      color:#4f46e5;
-      text-decoration:none;
-    }
-
-    @media(max-width:650px){
-      header h1{
-        font-size:26px;
-      }
-
-      .card{
-        padding:18px;
-      }
-
-      .subject{
-        grid-template-columns:1fr;
-      }
-
-      .remove{
-        width:100%;
-      }
-
-      .actions button{
-        width:100%;
-      }
-    }
+    *{ box-sizing:border-box; } body{ margin:0; font-family:Arial,Helvetica,sans-serif; background:#f5f7fb; color:#1f2937; line-height:1.8; }
+    .container{ max-width:900px; margin:0 auto; padding:25px 16px 50px; }
+    header{ text-align:center; padding:20px 0 25px; } header h1{ margin:0 0 10px; font-size:32px; color:#111827; } header p{ margin:0; color:#6b7280; font-size:16px; }
+    .card{ background:#fff; border-radius:14px; padding:26px; margin-bottom:22px; box-shadow:0 4px 15px rgba(0,0,0,.07); }
+    .card h2{ margin-top:0; color:#111827; } .card h3{ margin-top:20px; }
+    .subject{ display:grid; grid-template-columns:1.5fr 1fr 1fr auto; gap:10px; margin-bottom:12px; align-items:center; }
+    input{ width:100%; padding:12px; border:1px solid #d1d5db; border-radius:8px; font-size:15px; } input:focus{ border-color:#4f46e5; box-shadow:0 0 0 3px rgba(79,70,229,.15); outline:none; }
+    button{ border:0; border-radius:8px; padding:12px 16px; cursor:pointer; font-size:15px; font-weight:600; } .primary{ background:#4f46e5; color:#fff; } .primary:hover{ background:#4338ca; } .secondary{ background:#e5e7eb; color:#111827; } .remove{ background:#fee2e2; color:#b91c1c; padding:10px 14px; font-size:18px; }
+    .actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+    .result{ display:none; margin-top:18px; padding:18px; background:#eef2ff; border-radius:10px; text-align:center; border:1px solid #c7d2fe; border-left:4px solid #4f46e5; } .result.show{ display:block; } .result strong{ display:block; font-size:32px; color:#3730a3; margin-bottom:6px; } .result small{ color:#4b5563; font-size:14px; }
+    .formula{ background:#f8fafc; padding:12px; border-radius:8px; border:1px dashed #94a3b8; font-weight:bold; } .grade-table{ width:100%; border-collapse:collapse; margin:15px 0; } .grade-table th, .grade-table td{ border:1px solid #e5e7eb; padding:10px; text-align:left; } .grade-table th{ background:#f1f5f9; }
+    .seo-content h2{ margin-top:28px; } .seo-content h2:first-child{ margin-top:0; } .seo-content p{ line-height:1.8; color:#4b5563; } .seo-content a{ color:#4f46e5; text-decoration:none; font-weight:600; }
+    .faq{ border-top:1px solid #e5e7eb; padding:16px 0; } .faq:first-child{ border-top:0; } .faq h3{ margin:0 0 8px; font-size:17px; color:#111827; } .faq p{ margin:0; color:#6b7280; line-height:1.7; }
+    .footer{ text-align:center; color:#6b7280; font-size:14px; padding:25px 10px; } .footer a{ color:#4f46e5; text-decoration:none; }
+    @media(max-width:650px){ header h1{ font-size:26px; } .card{ padding:18px; } .subject{ grid-template-columns:1fr; } .remove{ width:100%; } .actions button{ width:100%; } }
   </style>
-
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebApplication",
-    "name":"GPA and CGPA Calculator",
-    "url":"https://maazgul.github.io/Percentage-Calculator/gpa-cgpa-calculator.html",
-    "applicationCategory":"EducationalApplication",
-    "operatingSystem":"Any",
-    "description":"Free online GPA and CGPA calculator for calculating weighted GPA using grade points and credit hours."
+    "@context":"https://schema.org", "@type":"WebApplication", "name":"MaazCalc GPA and CGPA Calculator Pakistan", "url":"https://maazgul.github.io/Percentage-Calculator/gpa-cgpa-calculator.html", "applicationCategory":"EducationApplication", "operatingSystem":"Any", "description":"Free GPA & CGPA Calculator for Pakistani universities FAST, NUST, LUMS, UET, KU, PU using grade points and credit hours.", "author":{ "@type":"Person", "name":"Maaz Gul" }, "offers":{ "@type":"Offer", "price":"0", "priceCurrency":"PKR" }
   }
   </script>
-
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
+    "@context":"https://schema.org", "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"What is a GPA?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"GPA stands for Grade Point Average. It represents the average of grade points earned across courses, usually weighted by credit hours."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"How is GPA calculated?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"GPA is calculated by multiplying each grade point by its credit hours, adding the results, and dividing by the total credit hours."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"What is CGPA?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"CGPA stands for Cumulative Grade Point Average and represents the combined grade point average across multiple semesters or academic periods."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Can I calculate GPA using different credit hours?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The calculator uses credit hours as weights, so courses with different credit hours can be included."
-        }
-      }
+      { "@type":"Question", "name":"What is a GPA in Pakistani universities?", "acceptedAnswer":{ "@type":"Answer", "text":"GPA stands for Grade Point Average. In Pakistan universities like FAST, NUST, LUMS, UET, Karachi University, Punjab University, GPA is calculated on 4.0 scale. It represents average of grade points weighted by credit hours per semester." } },
+      { "@type":"Question", "name":"How is GPA calculated for FAST, NUST, UET?", "acceptedAnswer":{ "@type":"Answer", "text":"GPA Formula: Σ(Grade Point × Credit Hours) ÷ Σ(Credit Hours). Example: 2 subjects: Subject 1: 3.5 GPA × 3 credits = 10.5, Subject 2: 4.0 × 3 credits = 12, Total = 22.5 ÷ 6 credits = 3.75 GPA. This method is used in FAST, NUST, UET, LUMS, and all Pakistani universities." } },
+      { "@type":"Question", "name":"What is CGPA?", "acceptedAnswer":{ "@type":"Answer", "text":"CGPA stands for Cumulative Grade Point Average. It is average of all semester GPAs combined. For example, if you have 8 semesters in BS in Pakistan, CGPA = (Sum of all semester GPAs weighted by credits) / Total Credits of all semesters. Used for degree final result." } },
+      { "@type":"Question", "name":"How to convert CGPA to percentage in Pakistan?", "acceptedAnswer":{ "@type":"Answer", "text":"Many Pakistani universities use formula: Percentage = CGPA × 25. Or (CGPA / 4.0) × 100. For example, 3.2 CGPA = 3.2 × 25 = 80% or (3.2/4)*100 = 80%. Some universities like UET have different formulas, check your university handbook." } },
+      { "@type":"Question", "name":"What is 4.0 GPA grading scale in Pakistan?", "acceptedAnswer":{ "@type":"Answer", "text":"In Pakistan: 4.0 = A+ (90-100%), 3.7-3.99 = A (80-89%), 3.0-3.69 = B+ (70-79%), 2.0-2.99 = B (60-69%), 1.0-1.99 = C (50-59%), below 1.0 = Fail. This scale is used in FAST, NUST, LUMS, UET, COMSATS." } },
+      { "@type":"Question", "name":"Can I calculate GPA using different credit hours like 1, 2, 3, 4?", "acceptedAnswer":{ "@type":"Answer", "text":"Yes, our calculator supports any credit hours (1, 2, 3, 4 credits) as used in Pakistani universities. Lab courses often have 1 credit, theory courses 3 or 4 credits. The calculator uses credit hours as weights." } },
+      { "@type":"Question", "name":"What is good GPA in Pakistan universities?", "acceptedAnswer":{ "@type":"Answer", "text":"Good GPA in Pakistan: 3.5+ is Excellent (Top of class, eligible for scholarships), 3.0-3.49 is Good (First Division), 2.5-2.99 is Satisfactory, below 2.0 is low. For jobs in Pakistan, most companies require at least 2.5 to 3.0 CGPA." } },
+      { "@type":"Question", "name":"How to calculate semester GPA and overall CGPA?", "acceptedAnswer":{ "@type":"Answer", "text":"Semester GPA = (Sum of Grade Point × Credits for that semester) / Total Credits that semester. CGPA = (Sum of All Semesters Weighted Points) / Total Credits of all semesters. Our calculator does both - add all subjects of a semester for GPA, add all semesters for CGPA." } },
+      { "@type":"Question", "name":"Is GPA and CGPA same?", "acceptedAnswer":{ "@type":"Answer", "text":"No. GPA is Grade Point Average for one semester only. CGPA is Cumulative GPA for all semesters combined (overall degree GPA). For example, 1st semester GPA 3.5, 2nd semester GPA 3.2, then CGPA after 2 semesters is average of both weighted by credits." } },
+      { "@type":"Question", "name":"Is MaazCalc GPA calculator accurate for Pakistani universities?", "acceptedAnswer":{ "@type":"Answer", "text":"Yes, MaazCalc GPA & CGPA Calculator is 100% free, accurate for 4.0 scale used in all Pakistani universities including FAST, NUST, LUMS, UET Lahore, UET Peshawar, Karachi University, Punjab University, COMSATS. Created by Maaz Gul for Pakistani students. All calculations happen in browser." } }
     ]
   }
   </script>
 </head>
-
 <body>
-
   <div class="container">
-
     <header>
-      <h1>GPA &amp; CGPA Calculator</h1>
-      <p>Calculate your weighted GPA quickly using grade points and credit hours.</p>
+      <h1>GPA & CGPA Calculator Pakistan</h1>
+      <p>Calculate weighted GPA for FAST, NUST, LUMS, UET, Karachi University, Punjab University – Free & Accurate</p>
     </header>
-
     <section class="card">
-
-      <h2>Calculate GPA</h2>
-
-      <p>
-        Add your subjects and enter the grade point and credit hours for each subject.
-      </p>
-
+      <h2>Calculate GPA / CGPA for Pakistani Universities</h2>
+      <p style="color:#6b7280; margin-top:0;">Add your subjects with grade points and credit hours. Best for BS, BSc, MSc, MBA students in Pakistan.</p>
       <div id="subjects"></div>
-
       <div class="actions">
         <button class="secondary" onclick="addSubject()">+ Add Subject</button>
         <button class="primary" onclick="calculateGPA()">Calculate GPA</button>
-        <button class="secondary" onclick="resetSubjects()">Reset</button>
+        <button class="secondary" onclick="resetSubjects()">Reset All</button>
       </div>
-
       <div id="result" class="result"></div>
-
+      <p style="font-size:13px; color:#6b7280; margin-top:15px;"><strong>Tip:</strong> For CGPA, add ALL subjects from ALL semesters together. For Semester GPA, add only that semester's subjects.</p>
     </section>
-
     <section class="card seo-content">
+      <h2>Free GPA and CGPA Calculator for Pakistani Universities</h2>
+      <p>MaazCalc's free GPA and CGPA Calculator is specially designed for students of <strong>Pakistani universities: FAST-NUCES, NUST, LUMS, UET Lahore, UET Peshawar, UET Taxila, COMSATS, Karachi University (KU), Punjab University (PU), Islamabad, NED, Mehran University</strong>. It helps you calculate weighted Grade Point Average using grade points and credit hours on the official 4.0 scale used in Pakistan.</p>
+      <h2>How to Calculate GPA? – Official Formula for Pakistan</h2>
+      <p>GPA is calculated by multiplying each subject's grade point by its credit hours, adding all weighted points, and dividing by total credit hours. This is the official formula used in FAST, NUST, and all HEC recognized universities in Pakistan.</p>
+      <p class="formula">GPA = Σ(Grade Point × Credit Hours) ÷ Σ(Credit Hours)</p>
+      <p><strong>Example for FAST University Student:</strong> Suppose you have 3 subjects in a semester: Data Structures – Grade Point 3.7 (A) with 3 credit hours, Calculus – Grade Point 3.0 (B+) with 3 credit hours, Islamic Studies – Grade Point 4.0 (A+) with 2 credit hours. Calculation: (3.7×3) + (3.0×3) + (4.0×2) = 11.1 + 9 + 8 = 28.1. Total credits = 3+3+2 = 8. GPA = 28.1 ÷ 8 = <strong>3.51 GPA</strong>.</p>
+      
+      <h2>What is CGPA? – Complete Guide for Pakistan</h2>
+      <p>CGPA stands for Cumulative Grade Point Average. It represents combined academic performance across multiple semesters or entire degree (4 years BS, 2 years MSc). For example, if you are in 8th semester of BS Computer Science in NUST, your CGPA is average of all 8 semesters weighted by credits.</p>
+      <p class="formula">CGPA = (Sum of All Semesters Weighted Points) ÷ (Total Credits of All Semesters)</p>
+      <p>To calculate CGPA in our calculator, simply add ALL subjects from ALL semesters together and click Calculate. Or calculate each semester GPA separately, then average them.</p>
 
-      <h2>Free GPA and CGPA Calculator</h2>
+      <h2>Pakistan University Grading Scale (4.0 Scale)</h2>
+      <table class="grade-table">
+        <tr><th>Grade Point</th><th>Grade</th><th>Percentage (Approx)</th><th>Status</th></tr>
+        <tr><td>4.00</td><td>A+ Grade</td><td>90% – 100%</td><td>Exceptional</td></tr>
+        <tr><td>3.70 – 3.99</td><td>A Grade</td><td>80% – 89%</td><td>Excellent</td></tr>
+        <tr><td>3.00 – 3.69</td><td>B+ / B Grade</td><td>70% – 79%</td><td>Very Good / Good</td></tr>
+        <tr><td>2.00 – 2.99</td><td>C+ / C Grade</td><td>60% – 69%</td><td>Satisfactory</td></tr>
+        <tr><td>1.00 – 1.99</td><td>D Grade</td><td>50% – 59%</td><td>Pass</td></tr>
+        <tr><td>Below 1.00</td><td>F Grade</td><td>Below 50%</td><td>Fail</td></tr>
+      </table>
+      <p>This 4.0 scale is officially used in FAST, NUST, LUMS, UET, COMSATS, KU, PU and most private universities in Pakistan under HEC guidelines.</p>
 
-      <p>
-        MaazCalc's free GPA and CGPA Calculator helps students calculate a
-        weighted Grade Point Average using grade points and credit hours.
-        Enter your subjects, grade points and credit hours to get your GPA instantly.
-      </p>
+      <h2>How to Convert CGPA to Percentage in Pakistan?</h2>
+      <p>Many Pakistani students need to convert CGPA to percentage for jobs or foreign admissions. Common formulas:</p>
+      <p class="formula">Formula 1 (Most Common): Percentage = CGPA × 25</p>
+      <p class="formula">Formula 2: Percentage = (CGPA ÷ 4.0) × 100</p>
+      <p><strong>Example:</strong> 3.2 CGPA = 3.2 × 25 = 80% Percentage. Or (3.2/4)*100 = 80%. <br><strong>Note:</strong> Some universities like UET have slightly different formulas (e.g., Percentage = (CGPA - 0.5) * 20). Always check your university handbook. Our <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a> can help convert.</p>
 
-      <h2>How to Calculate GPA?</h2>
-
-      <p>
-        GPA is calculated by multiplying each subject's grade point by its
-        credit hours, adding all weighted grade points, and dividing the total
-        by the total number of credit hours.
-      </p>
-
-      <p>
-        <strong>GPA = Σ(Grade Point × Credit Hours) ÷ Σ(Credit Hours)</strong>
-      </p>
-
-      <h2>Example of GPA Calculation</h2>
-
-      <p>
-        Suppose you have two subjects. Subject 1 has a grade point of 3.0
-        with 3 credit hours, while Subject 2 has a grade point of 4.0
-        with 3 credit hours.
-      </p>
-
-      <p>
-        GPA = [(3.0 × 3) + (4.0 × 3)] ÷ (3 + 3) = 3.50
-      </p>
-
-      <h2>What is CGPA?</h2>
-
-      <p>
-        CGPA stands for Cumulative Grade Point Average. It represents the
-        combined academic performance across multiple semesters or academic
-        periods. The exact CGPA calculation method can vary depending on the
-        educational institution.
-      </p>
-
-      <h2>Why Use MaazCalc GPA Calculator?</h2>
-
-      <p>
-        Our GPA calculator is free, simple and works directly in your browser.
-        No software installation is required. You can add multiple subjects
-        and calculate a weighted GPA using different credit hours.
-      </p>
-
+      <h2>Why Use MaazCalc GPA Calculator for Pakistan?</h2>
+      <p>Our GPA calculator is 100% free, simple, supports any credit hours (1, 2, 3, 4 credits), works directly in your browser without installation, and is designed for Pakistani students. No data is stored. We also provide <a href="percentage-calculator.html">Percentage Calculator</a>, <a href="discount-calculator.html">Discount Calculator in PKR</a>, and <a href="profit-loss-calculator.html">Profit & Loss Calculator</a> for everyday use. For any questions, <a href="contact.html">Contact Us</a>.</p>
     </section>
-
     <section class="card">
-
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq">
-        <h3>What is a GPA?</h3>
-        <p>
-          GPA stands for Grade Point Average and represents the average of
-          grade points earned in your courses.
-        </p>
-      </div>
-
-      <div class="faq">
-        <h3>How is GPA calculated?</h3>
-        <p>
-          Multiply each grade point by its credit hours, add the results,
-          and divide by the total credit hours.
-        </p>
-      </div>
-
-      <div class="faq">
-        <h3>What is CGPA?</h3>
-        <p>
-          CGPA stands for Cumulative Grade Point Average and represents
-          academic performance across multiple semesters or periods.
-        </p>
-      </div>
-
-      <div class="faq">
-        <h3>Can I use different credit hours?</h3>
-        <p>
-          Yes. Different credit hours can be entered because the calculator
-          uses credit hours to calculate a weighted GPA.
-        </p>
-      </div>
-
+      <h2>Frequently Asked Questions – GPA Pakistan</h2>
+      <div class="faq"><h3>What is a GPA in Pakistani universities?</h3><p>GPA stands for Grade Point Average. In Pakistan universities like FAST, NUST, LUMS, UET, Karachi University, Punjab University, GPA is calculated on 4.0 scale. It represents average of grade points weighted by credit hours per semester.</p></div>
+      <div class="faq"><h3>How is GPA calculated for FAST, NUST, UET?</h3><p>GPA Formula: Σ(Grade Point × Credit Hours) ÷ Σ(Credit Hours). Example: Subject 1: 3.5 GPA × 3 credits = 10.5, Subject 2: 4.0 × 3 credits = 12, Total = 22.5 ÷ 6 credits = 3.75 GPA. This method is used in all Pakistani universities.</p></div>
+      <div class="faq"><h3>What is CGPA?</h3><p>CGPA stands for Cumulative Grade Point Average. It is average of all semester GPAs combined. For example, if you have 8 semesters in BS, CGPA = (Sum of all semester GPAs weighted by credits) / Total Credits of all semesters.</p></div>
+      <div class="faq"><h3>How to convert CGPA to percentage in Pakistan?</h3><p>Many Pakistani universities use: Percentage = CGPA × 25. Or (CGPA / 4.0) × 100. Example: 3.2 CGPA = 80%. Check our <a href="marks-percentage-calculator.html">Marks Calculator</a> for conversion. Some universities have different formulas.</p></div>
+      <div class="faq"><h3>What is 4.0 GPA grading scale in Pakistan?</h3><p>In Pakistan: 4.0 = A+ (90-100%), 3.7-3.99 = A (80-89%), 3.0-3.69 = B+ (70-79%), 2.0-2.99 = B (60-69%), 1.0-1.99 = C (50-59%), below 1.0 = Fail. Used in FAST, NUST, LUMS, UET.</p></div>
+      <div class="faq"><h3>Can I calculate GPA using different credit hours like 1, 2, 3, 4?</h3><p>Yes, our calculator supports any credit hours (1, 2, 3, 4 credits) as used in Pakistani universities. Lab courses often have 1 credit, theory courses 3 or 4 credits.</p></div>
+      <div class="faq"><h3>What is good GPA in Pakistan universities?</h3><p>Good GPA in Pakistan: 3.5+ is Excellent (Top, scholarships), 3.0-3.49 is Good (First Division), 2.5-2.99 is Satisfactory, below 2.0 is low. For jobs, most companies require at least 2.5 to 3.0 CGPA.</p></div>
+      <div class="faq"><h3>How to calculate semester GPA and overall CGPA?</h3><p>Semester GPA = (Sum of Grade Point × Credits for that semester) / Total Credits that semester. CGPA = (Sum of All Semesters Weighted Points) / Total Credits of all semesters.</p></div>
+      <div class="faq"><h3>Is GPA and CGPA same?</h3><p>No. GPA is for one semester only. CGPA is Cumulative GPA for all semesters combined (overall degree GPA). For example, 1st semester GPA 3.5, 2nd GPA 3.2, then CGPA after 2 semesters is weighted average.</p></div>
+      <div class="faq"><h3>Is MaazCalc GPA calculator accurate for Pakistani universities?</h3><p>Yes, 100% free and accurate for 4.0 scale used in all Pakistani universities including FAST, NUST, LUMS, UET Lahore, Karachi University, Punjab University, COMSATS. Created by Maaz Gul for Pakistani students.</p></div>
     </section>
-<section class="card">
-  <h2>More Free Calculators</h2>
-
-  <p>
-    Try our
-    <a href="index.html">Free All-in-One Calculator</a>
-    for percentage, marks, discount, profit and loss, GPA and CGPA calculations.
-  </p>
-</section>
+<section class="card"><h2>More Free Calculators for Pakistani Students</h2><p>Try our <a href="index.html">Free All-in-One Calculator</a>, <a href="percentage-calculator.html">Percentage Calculator</a>, <a href="marks-percentage-calculator.html">Marks Percentage Calculator for Matric & Inter</a>, <a href="discount-calculator.html">Discount Calculator in PKR</a>, <a href="profit-loss-calculator.html">Profit & Loss Calculator for Business</a>.</p></section>
   </div>  
-
-  <footer class="footer">
-    © <span id="year"></span> MaazCalc · Simple tools for everyday calculations
-    <br><br>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a> |
-    <a href="contact.html">Contact Us</a> |
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms &amp; Conditions</a>
-  </footer>
-
+  <footer class="footer">© <span id="year"></span> MaazCalc – Made for University Students in Pakistan by Maaz Gul<br><br><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></footer>
   <script>
     const subjects = document.getElementById('subjects');
     const result = document.getElementById('result');
-
     function addSubject(name = '', gp = '', cr = '') {
-      const div = document.createElement('div');
-      div.className = 'subject';
-
-      div.innerHTML = `
-        <input class="sname" type="text" placeholder="Subject" value="${name}">
-        <input class="gp" type="number" min="0" step="0.01" placeholder="Grade Point" value="${gp}">
-        <input class="cr" type="number" min="0" step="0.5" placeholder="Credit Hours" value="${cr}">
-        <button class="remove" type="button" title="Remove Subject">×</button>
-      `;
-
-      div.querySelector('.remove').onclick = () => {
-        div.remove();
-      };
-
-      subjects.appendChild(div);
+      const div = document.createElement('div'); div.className = 'subject';
+      div.innerHTML = `<input class="sname" type="text" placeholder="Subject (e.g. Data Structures)" value="${name}"><input class="gp" type="number" min="0" max="4" step="0.01" placeholder="Grade Point (0-4)" value="${gp}"><input class="cr" type="number" min="0" step="0.5" placeholder="Credit Hours" value="${cr}"><button class="remove" type="button" title="Remove Subject">×</button>`;
+      div.querySelector('.remove').onclick = () => { div.remove(); }; subjects.appendChild(div);
     }
-
     function calculateGPA() {
-      const rows = [...document.querySelectorAll('.subject')];
-
-      let totalPoints = 0;
-      let totalCredits = 0;
-
-      if (rows.length === 0) {
-        result.innerHTML = 'Please add at least one subject.';
-        result.classList.add('show');
-        return;
-      }
-
+      const rows = [...document.querySelectorAll('.subject')]; let totalPoints = 0; let totalCredits = 0;
+      if (rows.length === 0) { result.innerHTML = 'Please add at least one subject.'; result.classList.add('show'); return; }
       for (const row of rows) {
-
-        const gp = parseFloat(row.querySelector('.gp').value);
-        const cr = parseFloat(row.querySelector('.cr').value);
-
-        if (!Number.isFinite(gp) || !Number.isFinite(cr) || cr <= 0 || gp < 0) {
-          result.innerHTML = 'Please enter valid grade points and credit hours for every subject.';
-          result.classList.add('show');
-          return;
-        }
-
-        totalPoints += gp * cr;
-        totalCredits += cr;
+        const gp = parseFloat(row.querySelector('.gp').value); const cr = parseFloat(row.querySelector('.cr').value);
+        if (!Number.isFinite(gp) || !Number.isFinite(cr) || cr <= 0 || gp < 0 || gp > 4.5) { result.innerHTML = 'Please enter valid grade points (0-4.0) and credit hours for every subject.'; result.classList.add('show'); return; }
+        totalPoints += gp * cr; totalCredits += cr;
       }
-
-      const gpa = totalPoints / totalCredits;
-
-      result.innerHTML = `
-        <strong>${gpa.toFixed(2)}</strong>
-        <small>
-          GPA · Total Credit Hours: ${totalCredits.toFixed(2)}
-          · Weighted Grade Points: ${totalPoints.toFixed(2)}
-        </small>
-      `;
-
+      const gpa = totalPoints / totalCredits; let grade = ""; let status = "";
+      if(gpa>=3.5){ grade="Excellent - A/A+ Grade"; status="Scholarship Eligible!"; }
+      else if(gpa>=3.0){ grade="Very Good - B+/A Grade"; status="First Division"; }
+      else if(gpa>=2.5){ grade="Good - B Grade"; status="Good Standing"; }
+      else if(gpa>=2.0){ grade="Satisfactory - C Grade"; status="Pass"; }
+      else if(gpa>=1.0){ grade="Pass - D Grade"; status="Need Improvement"; }
+      else{ grade="Fail - F Grade"; status="Fail"; }
+      const percentage = gpa * 25;
+      result.innerHTML = `<strong>${gpa.toFixed(2)} GPA / CGPA</strong><small>Total Credit Hours: ${totalCredits.toFixed(1)} · Weighted Points: ${totalPoints.toFixed(2)}<br><b>Grade: ${grade}</b><br>${status} · Approx Percentage: ${percentage.toFixed(2)}%<br><span style="color:#059669">✓ For FAST, NUST, UET, KU, PU – 4.0 Scale</span></small>`;
       result.classList.add('show');
     }
-
-    function resetSubjects() {
-      subjects.innerHTML = '';
-      result.classList.remove('show');
-
-      addSubject();
-      addSubject();
-      addSubject();
-    }
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    resetSubjects();
+    function resetSubjects() { subjects.innerHTML = ''; result.classList.remove('show'); addSubject(); addSubject(); addSubject(); }
+    document.getElementById('year').textContent = new Date().getFullYear(); resetSubjects();
   </script>
-
 </body>
 </html>

@@ -1,130 +1,37 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Percentage Calculator – Free Online Calculator | MaazCalc</title>
-
-<meta name="description" content="Free percentage calculator to find X% of a number and calculate percentage increase or decrease. Fast, simple and easy to use online.">
+<meta name="description" content="Free percentage calculator to find X% of a number, calculate percentage increase/decrease, marks, discount in Pakistan. Fast, accurate & easy for students.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Maaz Gul">
-
   <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/percentage-calculator.html">
-
-  <meta property="og:title" content="Percentage Calculator – Free Online Calculator">
-  <meta property="og:description" content="Calculate percentages, percentage increase, decrease and X% of any number with MaazCalc.">
+  <meta property="og:title" content="Percentage Calculator – Free Online Calculator Pakistan">
+  <meta property="og:description" content="Calculate percentages, percentage increase, decrease and X% of any number with MaazCalc. Best for Pakistani students & shopping.">
   <meta property="og:url" content="https://maazgul.github.io/Percentage-Calculator/percentage-calculator.html">
   <meta property="og:type" content="website">
-
   <style>
-    :root {
-      --primary: #4f46e5;
-      --bg: #f5f7fb;
-      --text: #222;
-      --card: #fff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 8px;
-      font-size: 32px;
-    }
-
-    header p {
-      margin: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: var(--card);
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      color: var(--primary);
-      margin-top: 0;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: bold;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-top: 6px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-
-    button {
-      margin-top: 18px;
-      padding: 12px 18px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    .result {
-      margin-top: 18px;
-      padding: 14px;
-      background: #eef2ff;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    a {
-      color: var(--primary);
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #666;
-      font-size: 14px;
-    }
-
-    footer a {
-      text-decoration: none;
-    }
+    :root { --primary: #4f46e5; --bg: #f5f7fb; --text: #222; --card: #fff; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.8; margin: 0; background: var(--bg); color: var(--text); }
+    header { background: var(--primary); color: white; padding: 30px 20px; text-align: center; }
+    header h1 { margin: 0 0 8px; font-size: 32px; }
+    header p { margin: 0; }
+    .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+    .card { background: var(--card); padding: 30px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+    h2 { color: var(--primary); margin-top: 0; }
+    h3 { color: #333; margin-top: 20px; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input { width: 100%; padding: 12px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+    button { margin-top: 18px; padding: 12px 18px; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; width: 100%; }
+    button:hover { opacity: 0.9; }
+    .result { margin-top: 18px; padding: 14px; background: #eef2ff; border-radius: 8px; font-weight: bold; border-left: 4px solid var(--primary); }
+    .formula { background: #f8fafc; padding: 12px; border-radius: 6px; font-family: monospace; border: 1px dashed #94a3b8; }
+    a { color: var(--primary); }
+    footer { text-align: center; padding: 25px; color: #666; font-size: 14px; }
+    footer a { text-decoration: none; }
   </style>
 <script type="application/ld+json">
 {
@@ -134,26 +41,52 @@
     {
       "@type": "Question",
       "name": "How do I calculate 10% of a number?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Divide 10 by 100 and multiply the result by the number. For example, 10% of 200 is 20."
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": "To calculate 10% of any number, divide 10 by 100 (which is 0.1) and multiply the result by the number. For example, 10% of 200 is 0.1 * 200 = 20. This is the easiest percentage to calculate." }
     },
     {
       "@type": "Question",
       "name": "How do I calculate percentage increase?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Subtract the original value from the new value, divide by the original value and multiply by 100."
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": "Formula: Percentage Increase = ((New Value - Original Value) / Original Value) * 100. For example, if price goes from 1000 PKR to 1200 PKR, increase is ((1200-1000)/1000)*100 = 20%." }
     },
     {
       "@type": "Question",
       "name": "How do I calculate percentage decrease?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Subtract the new value from the original value, divide by the original value and multiply by 100."
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": "Formula: Percentage Decrease = ((Original Value - New Value) / Original Value) * 100. If a shirt price drops from 2000 PKR to 1500 PKR, decrease is ((2000-1500)/2000)*100 = 25% discount." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the formula for percentage?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The basic percentage formula is: (Part / Whole) * 100 = Percentage. Or to find X% of a number: (Percentage / 100) * Number. For example, to find 20% of 500: (20/100)*500 = 100." }
+    },
+    {
+      "@type": "Question",
+      "name": "How to calculate marks percentage for Matric and Intermediate in Pakistan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For BISE boards in Pakistan, formula is (Obtained Marks / Total Marks) * 100. If you got 950 out of 1100 in Matric, your percentage is (950/1100)*100 = 86.36%. You can use our dedicated Marks Percentage Calculator for Matric, Intermediate, O-Level and A-Level." }
+    },
+    {
+      "@type": "Question",
+      "name": "How to calculate percentage on calculator?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On MaazCalc, just enter the percentage value in first box and the number in second box and click Calculate. For example, enter 15 and 2000 to find 15% of 2000 which is useful for calculating discount in Pakistani shopping." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between percent and percentage?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Percent means per hundred and is used with a specific number (e.g., 50%). Percentage is a general term for a proportion out of 100 without a specific number (e.g., 'a large percentage of students'). In math, both refer to the same concept." }
+    },
+    {
+      "@type": "Question",
+      "name": "How to calculate discount percentage in Pakistan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If original price is 3000 PKR and sale price is 2400 PKR, discount percentage is ((3000-2400)/3000)*100 = 20%. Our Discount Calculator helps you find final price after discount in Pakistani Rupees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this percentage calculator free and accurate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, MaazCalc Percentage Calculator is 100% free, accurate, and works offline in your browser. It is created and tested by Maaz Gul from Pakistan for students, teachers, and shopkeepers. All calculations happen in your browser and we do not store your data." }
+    },
+    {
+      "@type": "Question",
+      "name": "How to find 100% of a number?",
+      "acceptedAnswer": { "@type": "Answer", "text": "100% of any number is the number itself. Formula: (100/100) * Number = Number. So 100% of 750 is 750. This is useful to understand that 100% means whole or complete." }
     }
   ]
 }
@@ -166,210 +99,131 @@
   "url": "https://maazgul.github.io/Percentage-Calculator/percentage-calculator.html",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Any",
-  "description": "Free online percentage calculator to find X% of a number and calculate percentage increase or decrease.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
+  "description": "Free online percentage calculator to find X% of a number and calculate percentage increase or decrease for Pakistani students.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
+  "author": { "@type": "Person", "name": "Maaz Gul" }
 }
 </script>
 </head>
-
 <body>
-
 <header>
-  <h1>Percentage Calculator</h1>
-  <p>Free, simple and easy-to-use percentage calculator by MaazCalc.</p>
+  <h1>Percentage Calculator – Pakistan</h1>
+  <p>Free, simple and accurate percentage calculator by MaazCalc for students & shopping.</p>
 </header>
-
 <main class="container">
-
   <div class="card">
     <h2>Calculate X% of a Number</h2>
-
     <label for="percent">Percentage (%)</label>
     <input type="number" id="percent" placeholder="e.g. 20">
-
     <label for="number">Number</label>
     <input type="number" id="number" placeholder="e.g. 500">
-
-    <button type="button" onclick="calculatePercent()">Calculate</button>
-
+    <button type="button" onclick="calculatePercent()">Calculate Percentage</button>
     <div class="result" id="percentResult">Result will appear here.</div>
   </div>
-
   <div class="card">
     <h2>Calculate Percentage Increase or Decrease</h2>
-
     <label for="oldValue">Original Value</label>
-    <input type="number" id="oldValue" placeholder="e.g. 100">
-
+    <input type="number" id="oldValue" placeholder="e.g. 1000">
     <label for="newValue">New Value</label>
-    <input type="number" id="newValue" placeholder="e.g. 120">
-
+    <input type="number" id="newValue" placeholder="e.g. 1200">
     <button type="button" onclick="calculateChange()">Calculate Change</button>
-
     <div class="result" id="changeResult">Result will appear here.</div>
   </div>
 <div class="card">
-  <h2>How to Use the Percentage Calculator</h2>
-
-  <p>
-    Our free percentage calculator makes it easy to calculate percentages
-    quickly without doing manual calculations.
-  </p>
-
-  <h3>Calculate X% of a Number</h3>
-
-  <p>
-    Enter the percentage and the number you want to calculate. For example,
-    enter 20 as the percentage and 500 as the number. The calculator will
-    show that 20% of 500 is 100.
-  </p>
-
-  <h3>Calculate Percentage Increase or Decrease</h3>
-
-  <p>
-    Enter the original value and the new value. The calculator will determine
-    whether the value increased or decreased and display the percentage change.
-  </p>
-
-  <p>
-    This calculator can be useful for everyday calculations such as discounts,
-    price changes, marks, business calculations and comparing values.
-  </p>
+  <h2>How to Use the Percentage Calculator in Pakistan</h2>
+  <p>Our free percentage calculator is specially designed for Pakistani students, teachers, shopkeepers, and online shoppers to make everyday percentage calculations fast without doing manual math. Whether you want to calculate exam marks, shopping discounts in PKR, or business profit, this tool gives instant results.</p>
+  <h3>1. Calculate X% of a Number</h3>
+  <p>This is the most common use. Enter the percentage you want to find and the total number. For example, if you want to find 20% of 500, enter 20 as percentage and 500 as number. The calculator will show 20% of 500 is 100. This is useful for calculating 10% discount, 15% tax, or 50% marks.</p>
+  <h3>2. Calculate Percentage Increase or Decrease</h3>
+  <p>Enter original value and new value to find if it increased or decreased. For example, if petrol price in Pakistan goes from 280 PKR to 310 PKR, enter 280 and 310. Our tool will show 10.71% increase. If a mobile price drops from 50000 PKR to 40000 PKR, it will show 20% decrease.</p>
+  <h3>Why Students Use This Tool?</h3>
+  <p>Thousands of Matric, Intermediate, O-Level, and University students in Pakistan use this calculator to quickly convert marks to percentage. Instead of using formula (Obtained/Total*100) manually, just use our <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a> for more details.</p>
 </div>
   <div class="card">
-    <h2>How to Calculate a Percentage</h2>
-
-    <p>
-      To calculate a percentage of a number, use this formula:
-    </p>
-
-    <p>
-      <strong>Percentage = (Percentage ÷ 100) × Number</strong>
-    </p>
-
-    <p>
-      For example, 20% of 500 is 100.
-    </p>
-
-    <h2>Percentage Increase Formula</h2>
-
-    <p>
-      <strong>
-        Percentage Increase = ((New Value − Original Value) ÷ Original Value) × 100
-      </strong>
-    </p>
-
-    <h2>Percentage Decrease Formula</h2>
-
-    <p>
-      <strong>
-        Percentage Decrease = ((Original Value − New Value) ÷ Original Value) × 100
-      </strong>
-    </p>
-
-    <p>
-      MaazCalc provides free online calculators designed to make everyday
-      calculations quick and simple.
-    </p>
+    <h2>How to Calculate a Percentage – Formulas with Examples</h2>
+    <p>Understanding percentage formulas is very important for exams and daily life. Here are the 3 main formulas:</p>
+    <h3>1. Basic Percentage Formula</h3>
+    <p class="formula"><strong>Percentage = (Part / Whole) × 100</strong></p>
+    <p><strong>Example for Pakistan:</strong> You got 850 marks out of 1100 in BISE Lahore Matric exam. Percentage = (850 / 1100) × 100 = 77.27%</p>
+    <h3>2. Percentage Increase Formula</h3>
+    <p class="formula"><strong>Increase % = ((New Value − Original Value) ÷ Original Value) × 100</strong></p>
+    <p><strong>Example:</strong> Your shop sales increased from 50,000 PKR to 65,000 PKR. Increase = ((65000-50000)/50000)*100 = 30% growth.</p>
+    <h3>3. Percentage Decrease / Discount Formula</h3>
+    <p class="formula"><strong>Decrease % = ((Original Value − New Value) ÷ Original Value) × 100</strong></p>
+    <p><strong>Example:</strong> A jacket original price is 4000 PKR, sale price is 3000 PKR. Discount = ((4000-3000)/4000)*100 = 25% OFF.</p>
+    <p>MaazCalc provides free, tested, and accurate calculators designed to make everyday calculations quick and simple for Pakistani users without needing any app.</p>
   </div>
-
   <div class="card">
-    <h2>Frequently Asked Questions</h2>
-
+    <h2>Frequently Asked Questions – Percentage Calculation</h2>
     <h3>How do I calculate 10% of a number?</h3>
-    <p>
-      Divide 10 by 100 and multiply the result by the number. For example,
-      10% of 200 is 20.
-    </p>
-
+    <p>Divide 10 by 100 which is 0.1 and multiply the result by the number. For example, 10% of 200 is 0.1 * 200 = 20. This is very easy to calculate and useful for quick mental math and 10% discounts in Pakistan.</p>
     <h3>How do I calculate percentage increase?</h3>
-    <p>
-      Subtract the original value from the new value, divide by the original
-      value and multiply by 100.
-    </p>
-
+    <p>Subtract the original value from the new value, divide by the original value and multiply by 100. Example: Price from 1000 PKR to 1200 PKR, increase = ((1200-1000)/1000)*100 = 20% increase.</p>
     <h3>How do I calculate percentage decrease?</h3>
-    <p>
-      Subtract the new value from the original value, divide by the original
-      value and multiply by 100.
-    </p>
+    <p>Subtract the new value from the original value, divide by the original value and multiply by 100. If a mobile price drops from 2000 PKR to 1500 PKR, decrease = ((2000-1500)/2000)*100 = 25% discount.</p>
+    <h3>What is the formula for percentage?</h3>
+    <p>Basic formula is (Part / Whole) * 100 = Percentage. Or to find X% of a number: (Percentage / 100) * Number. For example, to find 20% of 500: (20/100)*500 = 100.</p>
+    <h3>How to calculate marks percentage for Matric and Intermediate in Pakistan?</h3>
+    <p>For all BISE boards in Pakistan (Lahore, Karachi, Gujranwala, Faisalabad, Islamabad), formula is (Obtained Marks / Total Marks) * 100. If you got 950 out of 1100 in Matric, percentage = (950/1100)*100 = 86.36%. Use our dedicated <a href="marks-percentage-calculator.html">Marks Percentage Calculator</a> for accurate grades.</p>
+    <h3>How to calculate percentage on calculator?</h3>
+    <p>On MaazCalc, just enter the percentage value in first box and the number in second box and click Calculate. For example, enter 15 and 2000 to find 15% of 2000 which is 300 PKR, useful for calculating discount or tax in Pakistani shopping.</p>
+    <h3>What is the difference between percent and percentage?</h3>
+    <p>Percent (%) means per hundred and is used with a specific number (e.g., 50%). Percentage is a general term for a proportion out of 100 without a specific number (e.g., 'a large percentage of students passed'). In math, both refer to same concept.</p>
+    <h3>How to calculate discount percentage in Pakistan?</h3>
+    <p>If original price is 3000 PKR and sale price is 2400 PKR, discount % = ((3000-2400)/3000)*100 = 20%. Our <a href="discount-calculator.html">Discount Calculator in PKR</a> helps you find final price after discount easily.</p>
+    <h3>Is this percentage calculator free and accurate?</h3>
+    <p>Yes, MaazCalc Percentage Calculator is 100% free, accurate, and works securely in your browser. Created by Maaz Gul from Pakistan for students and shopkeepers. All calculations happen locally and we do not store your data, as mentioned in our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <h3>How to find 100% of a number?</h3>
+    <p>100% of any number is the number itself. Formula: (100/100) * Number = Number. So 100% of 750 is 750. This is useful to understand that 100% means whole or complete.</p>
   </div>
-
   <div class="card">
-    <h2>Other Calculators</h2>
-
-    <p>
-  <a href="index.html">
-    Free All-in-One Calculator
-  </a>
-</p>    <p><a href="marks-percentage-calculator.html">Marks Percentage Calculator</a></p>
-    <p><a href="discount-calculator.html">Discount Calculator</a></p>
-    <p><a href="profit-loss-calculator.html">Profit & Loss Calculator</a></p>
-    <p><a href="gpa-cgpa-calculator.html">GPA & CGPA Calculator</a></p>
+    <h2>Other Useful Calculators for Pakistan</h2>
+    <p><a href="index.html">🏠 Free All-in-One Calculator (Home)</a></p>
+    <p><a href="marks-percentage-calculator.html">📚 Marks Percentage Calculator for Matric, Inter, O-Level</a></p>
+    <p><a href="discount-calculator.html">🛍️ Discount Calculator in Pakistani Rupees (PKR)</a></p>
+    <p><a href="profit-loss-calculator.html">💼 Profit & Loss Calculator for Business</a></p>
+    <p><a href="gpa-cgpa-calculator.html">🎓 GPA & CGPA Calculator for University Students</a></p>
   </div>
-
 </main>
-
 <footer>
   © <span id="year"></span> MaazCalc · Simple tools for everyday calculations
   <br><br>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About Us</a> |
-  <a href="contact.html">Contact Us</a> |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms.html">Terms & Conditions</a>
+  <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a>
 </footer>
-
 <script>
   function calculatePercent() {
     const percent = parseFloat(document.getElementById("percent").value);
     const number = parseFloat(document.getElementById("number").value);
     const result = document.getElementById("percentResult");
-
     if (isNaN(percent) || isNaN(number)) {
-      result.textContent = "Please enter both values.";
+      result.textContent = "Please enter both values to calculate percentage.";
       return;
     }
-
     const answer = (percent / 100) * number;
-    result.textContent = percent + "% of " + number + " = " + answer;
+    result.textContent = percent + "% of " + number + " = " + answer.toLocaleString();
   }
-
   function calculateChange() {
     const oldValue = parseFloat(document.getElementById("oldValue").value);
     const newValue = parseFloat(document.getElementById("newValue").value);
     const result = document.getElementById("changeResult");
-
     if (isNaN(oldValue) || isNaN(newValue)) {
-      result.textContent = "Please enter both values.";
+      result.textContent = "Please enter both original and new values.";
       return;
     }
-
     if (oldValue === 0) {
-      result.textContent = "Original value cannot be zero.";
+      result.textContent = "Original value cannot be zero for percentage change.";
       return;
     }
-
     const change = ((newValue - oldValue) / oldValue) * 100;
-
     if (change > 0) {
-      result.textContent =
-        "Percentage Increase = " + change.toFixed(2) + "%";
+      result.textContent = "Percentage Increase = " + change.toFixed(2) + "% ↑";
     } else if (change < 0) {
-      result.textContent =
-        "Percentage Decrease = " + Math.abs(change).toFixed(2) + "%";
+      result.textContent = "Percentage Decrease = " + Math.abs(change).toFixed(2) + "% ↓";
     } else {
-      result.textContent = "There is no percentage change.";
+      result.textContent = "There is no percentage change (0%).";
     }
   }
-
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
-```

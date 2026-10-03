@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://maazgul.github.io/Percentage-Calculator/sitemap.xml

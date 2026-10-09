@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator - Check Body Mass Index | MaazCalc</title>
+  <meta name="description" content="Free BMI Calculator by MaazCalc. Calculate your Body Mass Index (BMI) in kg and feet/inches. Check if you are underweight, normal, overweight. Ideal for Pakistan.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://maazgul.github.io/Percentage-Calculator/bmi-calculator.html">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.8; margin: 0; background: #f5f7fb; color: #222; }
+    header { background: #4f46e5; color: white; padding: 25px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 30px; }
+    .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+    .card { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 25px; }
+    h2 { color: #4f46e5; margin-top: 30px; }
+    label { font-weight: bold; display:block; margin-top:15px; }
+    input, select { width: 100%; padding: 12px; margin-top: 6px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    @media(max-width:600px){ .row { grid-template-columns: 1fr; } }
+    button { width: 100%; margin-top: 20px; padding: 14px; background: #4f46e5; color: white; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; }
+    button:hover { background: #3730a3; }
+    #result { margin-top: 20px; padding: 20px; background: #eef2ff; border-radius: 10px; font-size: 18px; display: none; text-align: center; }
+    #result b { color: #4f46e5; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #4f46e5; color: white; }
+    a { color: #4f46e5; }
+    .back { display: inline-block; margin-top: 25px; padding: 12px 20px; background: #4f46e5; color: white; text-decoration: none; border-radius: 6px; }
+    footer { text-align: center; padding: 25px; color: #666; font-size: 14px; }
+    footer a { color: #4f46e5; text-decoration: none; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>BMI Calculator</h1>
+  <p>MaazCalc – Check Your Body Mass Index</p>
+</header>
+<main class="container">
+  <div class="card">
+    <h2>Calculate Your BMI</h2>
+    <label>Height</label>
+    <div class="row">
+      <input type="number" id="feet" placeholder="Feet (e.g. 5)">
+      <input type="number" id="inches" placeholder="Inches (e.g. 8)">
+    </div>
+    <label style="margin-top:20px;">Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter weight in KG e.g. 70">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+
+    <h2>What is BMI?</h2>
+    <p>Body Mass Index (BMI) is a simple calculation using a person's height and weight. The formula is BMI = kg/m² where kg is a person's weight in kilograms and m² is their height in metres squared.</p>
+    
+    <h2>BMI Chart</h2>
+    <table>
+      <tr><th>BMI</th><th>Category</th></tr>
+      <tr><td>Below 18.5</td><td>Underweight</td></tr>
+      <tr><td>18.5 – 24.9</td><td>Normal / Healthy Weight</td></tr>
+      <tr><td>25.0 – 29.9</td><td>Overweight</td></tr>
+      <tr><td>30.0 and Above</td><td>Obese</td></tr>
+    </table>
+    <a class="back" href="index.html">← Back to Home</a>
+  </div>
+</main>
+<footer>
+  © <span id="year"></span> MaazCalc · Simple tools
+  <br><br>
+  <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="bmi-calculator.html">BMI</a>
+</footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+function calculateBMI(){
+  let feet = parseFloat(document.getElementById('feet').value) || 0;
+  let inches = parseFloat(document.getElementById('inches').value) || 0;
+  let weight = parseFloat(document.getElementById('weight').value);
+  if(weight <=0 || (feet==0 && inches==0)){ alert("Please enter valid height and weight"); return; }
+  let totalInches = (feet * 12) + inches;
+  let heightMeters = totalInches * 0.0254;
+  let bmi = weight / (heightMeters * heightMeters);
+  let category = "";
+  if(bmi < 18.5) category = "Underweight";
+  else if(bmi < 25) category = "Normal / Healthy";
+  else if(bmi < 30) category = "Overweight";
+  else category = "Obese";
+  let resultDiv = document.getElementById('result');
+  resultDiv.style.display = "block";
+  resultDiv.innerHTML = `Your BMI is <b>${bmi.toFixed(2)}</b><br>Category: <b>${category}</b>`;
+}
+</script>
+</body>
+</html>
